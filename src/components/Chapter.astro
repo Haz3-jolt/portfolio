@@ -65,6 +65,7 @@ const flip = index % 2 === 1;
     .chapter, .chapter[data-flip], .chapter[data-weight="large"] { grid-template-columns: 1fr; gap: var(--space-4); padding-block: var(--space-6); }
     .chapter[data-flip] .text { order: 0; }
     .art { margin-inline: calc(-1 * var(--gutter)); }
+    .art:has(.nt) { margin-inline: 0; }
   }
   @media (prefers-reduced-motion: reduce) {
     :global(html.js) .chapter:not([data-active]) .art { filter: none; opacity: 1; }

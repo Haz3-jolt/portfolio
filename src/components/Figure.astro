@@ -18,4 +18,9 @@ const fig = FIGURES[name]();
     border-radius: var(--radius);
   }
   .stage :global(svg) { width: 100%; height: auto; overflow: hidden; }
+  /* Phones: zoom into the middle of the bench, where the object sits, so it reads at full size. */
+  @media (max-width: 640px) {
+    .stage { overflow: hidden; -webkit-mask-image: none; mask-image: none; }
+    .stage :global(svg) { width: 150%; max-width: none; margin-left: -25%; margin-block: -6% -4%; }
+  }
 </style>

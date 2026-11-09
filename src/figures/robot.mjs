@@ -101,7 +101,7 @@ export function obstacleSvg(P, ob, i) {
     const F = G.frameOf([ob.x, ob.y, 1.2 + OB_R], [Math.cos(a), Math.sin(a), 0], [-Math.sin(a), Math.cos(a), 0], [0, 0, 1]);
     body = S(G.disc(-1, 8, OB_R, F, P), { tone: "mid" });
   }
-  return `<g data-ob="${i}" data-depth="${depth}" style="cursor:grab">${body}</g>`;
+  return `<g data-ob="${i}" data-depth="${depth}" style="cursor:grab;touch-action:none">${body}</g>`;
 }
 
 // The bot, built at a pose (x, y, heading th). Rebuilt every frame by the live code.

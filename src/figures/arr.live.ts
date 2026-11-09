@@ -103,6 +103,9 @@ export default function mount(root: HTMLElement, data: Data, ctx: { still: boole
     prev ? close(prev, go) : go();
   };
 
+  // Touch: the first tap on a file lifts it, a second tap opens it (there's no hover on a phone).
+  let lastPointer = "mouse";
+  svg.addEventListener("pointerdown", (ev) => { lastPointer = ev.pointerType; });
   svg.addEventListener("click", (ev) => {
     const t = ev.target as Element;
     const g = t.closest?.("[data-drawer]");
@@ -110,10 +113,16 @@ export default function mount(root: HTMLElement, data: Data, ctx: { still: boole
     const i = Number(g.getAttribute("data-drawer"));
     if (t.closest("[data-label]") && i === current) { window.open(data.contents[i].standard.href, "_blank", "noopener"); return; }
     const folderEl = t.closest("[data-folder]");
-    if (folderEl && i === current) { window.open(data.contents[i].cards[Number(folderEl.getAttribute("data-folder"))].href, "_blank", "noopener"); return; }
+    if (folderEl && i === current) {
+      const f = Number(folderEl.getAttribute("data-folder"));
+      if (lastPointer !== "mouse" && f !== picked) { pick(f); return; }
+      window.open(data.contents[i].cards[f].href, "_blank", "noopener");
+      return;
+    }
     open(i);
   });
   svg.addEventListener("pointerover", (ev) => {
+    if (ev.pointerType !== "mouse") return;
     const folderEl = (ev.target as Element).closest?.("[data-folder]");
     const g = folderEl?.closest("[data-drawer]");
     if (folderEl && g && Number(g.getAttribute("data-drawer")) === current) {

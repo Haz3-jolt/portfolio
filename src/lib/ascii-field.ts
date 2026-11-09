@@ -82,7 +82,7 @@ export function startAsciiField() {
 
   const readTheme = () => {
     ink = getComputedStyle(document.documentElement).getPropertyValue("--grain-ink").trim() || ink;
-    alpha = document.documentElement.dataset.theme === "light" ? 0.75 : 0.62;
+    alpha = (document.documentElement.dataset.theme === "light" ? 0.75 : 0.62) * (innerWidth < 700 ? 0.8 : 1); // a touch fainter on phones
   };
   const resize = () => {
     canvas.width = Math.ceil(innerWidth / CELL) * CELL;
@@ -103,7 +103,35 @@ export function startAsciiField() {
     }
   };
 
+  // Clearing mask: the fog thins out around text and interactive elements, so they sit on calm
+  // background. Rebuilt from element rectangles a few times a second while scrolling.
+  const CLEAR_SEL = "h1, h2, h3, p, li, a, button, input, select, dl, .phone, .card, .c, .cards, .contact, .arr-tag, figure.fig";
+  let clear = new Float32Array(0), clearAt = 0, dirty = true;
+  const buildClear = () => {
+    if (clear.length !== cols * rows) clear = new Float32Array(cols * rows);
+    else clear.fill(0);
+    const pad = 10;
+    for (const el of document.querySelectorAll<HTMLElement>(CLEAR_SEL)) {
+      if (el.closest(".fig") && el.tagName !== "FIGURE") continue;
+      const r = el.getBoundingClientRect();
+      if (r.bottom < -pad || r.top > innerHeight + pad || r.width === 0) continue;
+      // Figures only clear lightly, so the fog still frames them.
+      const strength = el.tagName === "FIGURE" ? 0.55 : 1;
+      const c0 = Math.max(0, Math.floor((r.left - pad) / CELL)), c1 = Math.min(cols - 1, Math.ceil((r.right + pad) / CELL));
+      const r0 = Math.max(0, Math.floor((r.top - pad) / CELL)), r1 = Math.min(rows - 1, Math.ceil((r.bottom + pad) / CELL));
+      for (let y = r0; y <= r1; y++) for (let x = c0; x <= c1; x++) { const k = y * cols + x; if (clear[k] < strength) clear[k] = strength; }
+    }
+    // Soften the edges: one horizontal and one vertical box blur, 3 cells wide.
+    const tmp = new Float32Array(clear.length);
+    for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) { let a = 0, n = 0; for (let d = -3; d <= 3; d++) { const xx = x + d; if (xx >= 0 && xx < cols) { a += clear[y * cols + xx]; n++; } } tmp[y * cols + x] = a / n; }
+    for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) { let a = 0, n = 0; for (let d = -3; d <= 3; d++) { const yy = y + d; if (yy >= 0 && yy < rows) { a += tmp[yy * cols + x]; n++; } } clear[y * cols + x] = a / n; }
+    dirty = false;
+  };
+  addEventListener("scroll", () => { dirty = true; }, { passive: true });
+
   const levels = () => {
+    const now = performance.now();
+    if (dirty || now - clearAt > 400) { buildClear(); clearAt = now; }
     const out = new Uint8Array(cols * rows);
     const n = GLYPHS.length - 1;
     const tt = time * 0.5;
@@ -117,6 +145,7 @@ export function startAsciiField() {
         const tex = 0.4 + 0.6 * Math.pow(noise(c * 0.09 + tt, r * 0.09 - tt * 0.7), 1.6);
         let l = Math.min(1, dens) * tex;
         l = Math.min(1, Math.max(0, (l - 0.12) * 1.5));
+        l *= 1 - Math.min(1, clear[r * cols + c] * 1.15);
         out[r * cols + c] = Math.min(n, Math.floor(Math.sqrt(l) * (n + 0.6)));
       }
     }
@@ -167,7 +196,7 @@ export function startAsciiField() {
   };
   const run = () => { if (!raf && !still) { last = 0; raf = requestAnimationFrame(loop); } };
   const stop = () => { cancelAnimationFrame(raf); raf = 0; };
-  addEventListener("resize", () => { resize(); for (let i = 0; i < 40; i++) { feed(1 / 30); step(1 / 30); } draw(); });
+  addEventListener("resize", () => { readTheme(); resize(); for (let i = 0; i < 40; i++) { feed(1 / 30); step(1 / 30); } draw(); });
   document.addEventListener("visibilitychange", () => (document.hidden ? stop() : run()));
   document.addEventListener("themechange", () => { readTheme(); draw(); });
   run();
