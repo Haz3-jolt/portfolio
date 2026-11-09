@@ -1,30 +1,62 @@
 ---
-// The epilogue, kept small: the eight latest merged PRs, and every other repo as one line of links.
+// The epilogue: my GitHub contribution calendar for the last year, drawn in black and orange,
+// then every other repo as two lines of links. Data comes from the GitHub API at build time.
 import data from "../data/github.json";
 
-type PR = { repo: string; number: number; title: string; merged: string; url: string };
-const HIDE = /sandbox|demo-repo/i;
-const prs = (data.prs as PR[]).filter((p) => !HIDE.test(p.repo));
-const latest = prs.slice(0, 8);
-const short = (repo: string) => repo.split("/")[1];
-const date = (d: string) => new Date(`${d}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+type Day = [string, number, number]; // date, count, weekday (0 = Sunday)
+const cal = (data as any).calendar as { total: number; weeks: Day[][] } | null;
+const weeks = cal?.weeks ?? [];
 
+// Levels like GitHub's: zero, then quartiles of the non-zero days.
+const counts = weeks.flat().map((d) => d[1]).filter((n) => n > 0).sort((a, b) => a - b);
+const q = (p: number) => counts[Math.min(counts.length - 1, Math.floor(p * counts.length))] ?? 1;
+const cuts = [q(0.25), q(0.5), q(0.75)];
+const level = (n: number) => (n === 0 ? 0 : n <= cuts[0] ? 1 : n <= cuts[1] ? 2 : n <= cuts[2] ? 3 : 4);
+
+const CELL = 11, GAP = 3, STEP = CELL + GAP, LEFT = 30, TOP = 18;
+const width = LEFT + weeks.length * STEP;
+const height = TOP + 7 * STEP;
+const fmt = (d: string) => new Date(`${d}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+// A month label above the first week that starts in that month.
+const months: { x: number; label: string }[] = [];
+weeks.forEach((w, i) => {
+  const first = w[0]?.[0];
+  if (!first) return;
+  const m = new Date(`${first}T00:00:00Z`).getUTCMonth();
+  const prev = i > 0 ? new Date(`${weeks[i - 1][0][0]}T00:00:00Z`).getUTCMonth() : -1;
+  if (m !== prev && i < weeks.length - 2) months.push({ x: LEFT + i * STEP, label: new Date(Date.UTC(2000, m, 1)).toLocaleString("en-GB", { month: "short", timeZone: "UTC" }) });
+});
+const busiest = weeks.flat().reduce((a, d) => (d[1] > a[1] ? d : a), ["", 0, 0] as Day);
+
+const short = (n: string) => n.split("/")[1];
 const SKIP = /sandbox|demo-repo|Notes$|portfolio-site|SDB_Mini|DS-Miniproject|java-script-based-design/i;
 const contributed = (data.contributed as any[]).filter((r) => !SKIP.test(r.name)).map((r) => ({ name: short(r.name), url: r.url }));
 const own = (data.own as any[]).filter((r) => !SKIP.test(r.name) && (r.description || r.language)).map((r) => ({ name: short(r.name), url: r.url }));
 ---
 <section class="ledger wrap" id="ledger" aria-labelledby="ledger-title">
   <h2 id="ledger-title">Still going</h2>
-  <p class="lede">{prs.length} merged pull requests and counting. The latest:</p>
-  <ol>
-    {latest.map((p) => (
-      <li>
-        <a href={p.url} target="_blank" rel="noopener">{p.title}</a>
-        <span>{short(p.repo)}<i>{date(p.merged)}</i></span>
-      </li>
-    ))}
-  </ol>
-  <p class="all"><a href="https://github.com/pulls?q=is%3Apr+author%3AHaz3-jolt+is%3Amerged" target="_blank" rel="noopener">All {prs.length} on GitHub ↗</a></p>
+  {cal && (
+    <>
+      <p class="lede"><mark>{cal.total.toLocaleString("en-US")} contributions</mark> on GitHub in the last year.</p>
+      <div class="cal-scroll">
+        <svg class="cal" viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`GitHub contribution calendar: ${cal.total} contributions in the last year. Busiest day ${fmt(busiest[0])} with ${busiest[1]}.`}>
+          {months.map((m) => <text class="lbl" x={m.x} y={11}>{m.label}</text>)}
+          {[[1, "Mon"], [3, "Wed"], [5, "Fri"]].map(([d, l]) => <text class="lbl" x={0} y={TOP + (d as number) * STEP + 9}>{l}</text>)}
+          {weeks.map((w, i) => w.map(([date, n, wd]) => (
+            <rect x={LEFT + i * STEP} y={TOP + wd * STEP} width={CELL} height={CELL} rx="2" data-l={level(n)}>
+              <title>{`${n} contribution${n === 1 ? "" : "s"} on ${fmt(date)}`}</title>
+            </rect>
+          )))}
+        </svg>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span>Less</span>
+        {[0, 1, 2, 3, 4].map((l) => <i data-l={l}></i>)}
+        <span>More</span>
+        <a href="https://github.com/Haz3-jolt" target="_blank" rel="noopener">github.com/Haz3-jolt ↗</a>
+      </div>
+    </>
+  )}
 
   <div class="repos">
     <p><span>Contributed to</span> {contributed.map((r, i) => <><a href={r.url} target="_blank" rel="noopener">{r.name}</a>{i < contributed.length - 1 ? ", " : ""}</>)}</p>
@@ -32,21 +64,34 @@ const own = (data.own as any[]).filter((r) => !SKIP.test(r.name) && (r.descripti
   </div>
 </section>
 
+<script>
+  // On narrow screens the calendar scrolls sideways; start at the most recent weeks.
+  const box = document.querySelector<HTMLElement>(".cal-scroll");
+  if (box) box.scrollLeft = box.scrollWidth;
+</script>
+
 <style>
-  .ledger { padding-block: var(--space-7) var(--space-6); max-width: min(100% - 2 * var(--gutter), 44rem); margin-inline: auto; }
+  .ledger { padding-block: var(--space-7) var(--space-6); }
   h2 { font-size: var(--step-2); margin-bottom: var(--space-2); }
-  .lede { color: var(--ink-2); margin-bottom: var(--space-3); }
-  ol { list-style: none; margin: 0; padding: 0; }
-  li { display: flex; justify-content: space-between; gap: var(--space-4); padding: 0.35rem 0; font-size: var(--step--1); border-bottom: 1px solid color-mix(in srgb, var(--rule) 50%, transparent); }
-  li a { text-decoration: none; color: var(--ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  li a:hover { color: var(--accent); }
-  li span { color: var(--ink-3); white-space: nowrap; display: flex; gap: var(--space-3); }
-  li span i { font-style: normal; }
-  .all { margin-top: var(--space-3); font-size: var(--step--1); }
-  .all a { color: var(--ink-2); }
-  .repos { margin-top: var(--space-6); display: grid; gap: var(--space-3); font-size: var(--step--1); color: var(--ink-3); line-height: 1.7; }
+  .lede { color: var(--ink-2); margin-bottom: var(--space-4); }
+  /* The calendar: black squares, lit in steps of the site's orange. */
+  .cal-scroll { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .cal-scroll::-webkit-scrollbar { display: none; }
+  .ledger :global(.cal) { display: block; width: 100%; min-width: 620px; height: auto; }
+  .ledger :global(.cal .lbl) { fill: var(--ink-3); font-size: 9px; font-family: var(--font-sans); }
+  .ledger :global(.cal rect) { --c: #0d0c0b; fill: var(--c); transition: opacity 120ms; }
+  .ledger :global(.legend i) { --c: #0d0c0b; display: inline-block; width: 11px; height: 11px; border-radius: 2px; background: var(--c); }
+  :global(:root[data-theme="light"]) .ledger :global(.cal rect), :global(:root[data-theme="light"]) .ledger :global(.legend i) { --c: #2a2620; }
+  .ledger :global([data-l="1"]) { --c: color-mix(in srgb, var(--accent) 30%, #0d0c0b) !important; }
+  .ledger :global([data-l="2"]) { --c: color-mix(in srgb, var(--accent) 55%, #0d0c0b) !important; }
+  .ledger :global([data-l="3"]) { --c: color-mix(in srgb, var(--accent) 80%, #0d0c0b) !important; }
+  .ledger :global([data-l="4"]) { --c: var(--accent) !important; }
+  .ledger :global(.cal rect:hover) { opacity: 0.6; }
+  .legend { display: flex; align-items: center; gap: 4px; margin-top: var(--space-2); font-size: var(--step--1); color: var(--ink-3); }
+  .legend span { margin-inline: 4px; }
+  .legend a { margin-left: auto; color: var(--ink-2); }
+  .repos { margin-top: var(--space-6); display: grid; gap: var(--space-3); font-size: var(--step--1); color: var(--ink-3); line-height: 1.7; max-width: 44rem; }
   .repos span { display: block; color: var(--ink-2); font-weight: 600; }
   .repos a { color: var(--ink-2); }
   .repos a:hover { color: var(--accent); }
-  @media (max-width: 560px) { li { flex-direction: column; gap: 0; } li a { white-space: normal; } }
 </style>

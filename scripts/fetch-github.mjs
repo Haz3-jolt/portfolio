@@ -1,7 +1,7 @@
 // Fetches Hari's merged PRs and repos from the GitHub API and writes src/data/github.json.
 // Token: GITHUB_TOKEN env var (CI), else `gh auth token` locally, else unauthenticated.
 import { execSync } from "node:child_process";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const USER = "Haz3-jolt";
 let token = process.env.GITHUB_TOKEN;
@@ -57,7 +57,29 @@ async function repoInfo(full) {
   }
 }
 
-const prs = await mergedPRs();
+// The contribution calendar (the green squares on a GitHub profile): last 53 weeks, one count per day.
+async function calendar() {
+  if (!token) return null; // the GraphQL API needs a token
+  const query = `query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar {
+    totalContributions weeks { contributionDays { date contributionCount weekday } } } } } }`;
+  const res = await fetch("https://api.github.com/graphql", { method: "POST", headers: { ...headers, "Content-Type": "application/json" }, body: JSON.stringify({ query, variables: { login: USER } }) });
+  if (!res.ok) throw new Error(`${res.status} graphql: ${await res.text()}`);
+  const cal = (await res.json()).data.user.contributionsCollection.contributionCalendar;
+  return { total: cal.totalContributions, weeks: cal.weeks.map((w) => w.contributionDays.map((d) => [d.date, d.contributionCount, d.weekday])) };
+}
+
+const OUT = "src/data/github.json";
+const previous = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : null;
+let cal = null;
+try { cal = await calendar(); } catch (e) { console.warn("calendar failed:", e.message); }
+let prs;
+try { prs = await mergedPRs(); } catch (e) {
+  // Rate limited or offline: keep the previous PR data, but still save a fresh calendar if we got one.
+  if (!previous) throw e;
+  console.warn("PR fetch failed, keeping previous data:", e.message.slice(0, 120));
+  if (cal) writeFileSync(OUT, JSON.stringify({ ...previous, calendar: cal }, null, 1));
+  process.exit(0);
+}
 const own = await ownRepos();
 const counts = {};
 for (const pr of prs) counts[pr.repo] = (counts[pr.repo] || 0) + 1;
@@ -73,7 +95,8 @@ const data = {
   prs,
   own,
   contributed,
+  calendar: cal ?? previous?.calendar ?? null,
 };
 mkdirSync("src/data", { recursive: true });
-writeFileSync("src/data/github.json", JSON.stringify(data, null, 1));
+writeFileSync(OUT, JSON.stringify(data, null, 1));
 console.log(`merged PRs: ${prs.length}, repos contributed: ${contributed.length}, own repos: ${own.length}`);
