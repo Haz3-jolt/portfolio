@@ -1,0 +1,171 @@
+---
+// Spaced repetition you can feel: write a card, review it, and watch the gaps between reviews grow.
+// Scheduling is a simplified SM-2 (the family AnkiDroid's older scheduler comes from):
+// Again resets to 1 day, Hard ×1.2, Good × ease, Easy × ease × 1.3; ease moves with your answers.
+---
+<div class="srs" data-srs>
+  <div class="phone" aria-label="AnkiDroid review screen">
+    <div class="notch"></div>
+    <div class="appbar"><span class="deck">Default</span><span class="counts"><b class="new">1</b> <b class="lrn">0</b> <b class="due">0</b></span></div>
+    <button type="button" class="card" data-card aria-live="polite">
+      <span class="text" data-text>What does SRS stand for?</span>
+      <span class="divider" data-divider hidden></span>
+      <span class="answer" data-answer hidden>Spaced repetition system</span>
+    </button>
+    <div class="bottom">
+      <button type="button" class="show" data-show>Show answer</button>
+      <div class="answers" data-answers hidden>
+        <button type="button" data-a="again"><small data-next="again"></small>Again</button>
+        <button type="button" data-a="hard"><small data-next="hard"></small>Hard</button>
+        <button type="button" data-a="good"><small data-next="good"></small>Good</button>
+        <button type="button" data-a="easy"><small data-next="easy"></small>Easy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="side">
+    <form class="make" data-make>
+      <label><span>Front</span><input name="front" value="What does SRS stand for?" maxlength="80" autocomplete="off" /></label>
+      <label><span>Back</span><input name="back" value="Spaced repetition system" maxlength="80" autocomplete="off" /></label>
+      <button type="submit">Add card</button>
+    </form>
+    <figure class="curve">
+      <svg viewBox="0 0 600 150" data-curve role="img" aria-label="Memory over time: each review resets the forgetting curve, and the curve flattens as intervals grow."></svg>
+      <figcaption data-caption>Tap "Show answer" on the phone, then pick how well you remembered. Each review resets the forgetting curve, and it decays slower every time.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<style>
+  .srs { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--space-6); align-items: center; margin-top: var(--space-5); }
+  /* Phone */
+  .phone { position: relative; width: 250px; height: 500px; border-radius: 34px; padding: 34px 12px 14px; background: #0c0b0a; box-shadow: 0 0 0 2px #3a3833, 0 20px 40px -20px #000; display: grid; grid-template-rows: auto 1fr auto; gap: 8px; color: #ece5d3; }
+  .notch { position: absolute; top: 12px; left: 50%; translate: -50%; width: 70px; height: 8px; border-radius: 6px; background: #222; }
+  .appbar { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; font-size: 13px; font-weight: 600; border-bottom: 1px solid #2a2824; }
+  .counts b { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .new { color: #6b9bff; } .lrn { color: #ff6b6b; } .due { color: #6be0a0; }
+  .card { font: inherit; text-align: center; cursor: pointer; display: grid; align-content: center; gap: 12px; padding: 14px; background: #1c1b19; color: #ece5d3; border: 0; border-radius: 14px; }
+  .card[data-flipping] { animation: flip 260ms var(--ease); }
+  @keyframes flip { 50% { transform: scale(0.97); opacity: 0.6; } }
+  .text { font-size: 17px; font-weight: 500; text-wrap: balance; }
+  .divider { height: 1px; background: #3a3833; }
+  .answer { font-size: 17px; color: #ff8a63; text-wrap: balance; }
+  .bottom { min-height: 56px; display: grid; }
+  .show { font: inherit; font-size: 14px; font-weight: 600; border: 0; border-radius: 12px; background: #2a2824; color: #ece5d3; cursor: pointer; }
+  .show:hover { background: #34312c; }
+  .answers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+  .answers[hidden] { display: none; }
+  .answers button { font: inherit; font-size: 12px; font-weight: 600; border: 0; border-radius: 10px; cursor: pointer; display: grid; gap: 1px; padding: 6px 0; color: #0c0b0a; transition: transform 120ms var(--ease), filter 120ms; }
+  .answers button small { font-size: 10px; font-weight: 500; opacity: 0.75; font-variant-numeric: tabular-nums; }
+  .answers button:active { transform: scale(0.95); }
+  .answers button:hover { filter: brightness(1.1); }
+  [data-a="again"] { background: #ff8a80; } [data-a="hard"] { background: #c9c3b4; } [data-a="good"] { background: #8fdcb0; } [data-a="easy"] { background: #8fb4ff; }
+  /* Side */
+  .side { display: grid; gap: var(--space-5); min-width: 0; }
+  .make { display: grid; grid-template-columns: 1fr 1fr auto; gap: var(--space-2); align-items: end; }
+  .make label { display: grid; gap: 2px; font-size: var(--step--1); color: var(--ink-3); }
+  .make input { font: inherit; font-size: var(--step--1); color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule); padding: 0.35em 0; min-height: 36px; outline: none; }
+  .make input:focus { border-bottom-color: var(--accent); }
+  .make button { font: inherit; font-size: var(--step--1); font-weight: 500; cursor: pointer; border-radius: var(--radius); min-height: 40px; background: var(--ink); color: var(--paper); border: 0; padding: 0 1em; white-space: nowrap; }
+  .make button:hover { background: var(--accent); }
+  .curve { margin: 0; }
+  .curve svg { width: 100%; height: auto; overflow: visible; }
+  .curve figcaption { font-size: var(--step--1); color: var(--ink-2); margin-top: var(--space-1); }
+  @media (max-width: 760px) { .srs { grid-template-columns: 1fr; justify-items: center; } .side { width: 100%; } .make { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import { animate } from "animejs";
+  const root = document.querySelector<HTMLElement>("[data-srs]")!;
+  const $ = <T extends Element>(s: string) => root.querySelector<T>(s)!;
+  const svg = $<SVGSVGElement>("[data-curve]");
+  const answers = $<HTMLElement>("[data-answers]");
+  let front = "What does SRS stand for?", back = "Spaced repetition system";
+  let showingBack = false;
+  type Review = { day: number; interval: number };
+  let state = { interval: 0, ease: 2.5, day: 0 };
+  let history: Review[] = [];
+
+  const next = (a: string) => {
+    const { interval, ease } = state;
+    if (a === "again") return { interval: 1, ease: Math.max(1.3, ease - 0.2) };
+    if (interval === 0) return { interval: a === "hard" ? 1 : a === "good" ? 2 : 4, ease: a === "easy" ? ease + 0.15 : a === "hard" ? ease - 0.15 : ease };
+    if (a === "hard") return { interval: Math.max(1, Math.round(interval * 1.2)), ease: Math.max(1.3, ease - 0.15) };
+    if (a === "good") return { interval: Math.round(interval * ease), ease };
+    return { interval: Math.round(interval * ease * 1.3), ease: ease + 0.15 };
+  };
+  const fmt = (d: number) => (d < 30 ? `${d}d` : d < 365 ? `${(d / 30).toFixed(d < 60 ? 1 : 0)}mo` : `${(d / 365).toFixed(1)}y`);
+  const labels = () => { for (const a of ["again", "hard", "good", "easy"]) $(`[data-next="${a}"]`).textContent = fmt(next(a).interval); };
+
+  const flipTo = (back_: boolean) => {
+    const card = $<HTMLButtonElement>("[data-card]");
+    card.removeAttribute("data-flipping"); void card.offsetWidth; card.setAttribute("data-flipping", "");
+    showingBack = back_;
+    $("[data-text]").textContent = front;
+    $("[data-answer]").textContent = back;
+    $("[data-answer]").hidden = !back_;
+    $("[data-divider]").hidden = !back_;
+    $("[data-show]").hidden = back_;
+    answers.hidden = !back_;
+    const counts = root.querySelectorAll(".counts b");
+    counts[0].textContent = history.length ? "0" : "1";
+    counts[2].textContent = history.length ? "1" : "0";
+  };
+
+  // The curve: memory decays as exp(-t / stability) after each review; stability grows with the interval.
+  const draw = () => {
+    const W = 600, H = 150, pad = 12;
+    const span = Math.max(30, (history.at(-1)?.day ?? 0) + state.interval * 1.15 + 2);
+    const X = (d: number) => pad + (d / span) * (W - pad * 2);
+    const Y = (r: number) => H - 22 - r * (H - 40);
+    let path = "";
+    const reviews = history.length ? history : [{ day: 0, interval: 0 }];
+    reviews.forEach((rv, i) => {
+      const end = reviews[i + 1]?.day ?? span;
+      const s = Math.max(0.8, (rv.interval || 1) * 0.9);
+      for (let d = rv.day; d <= end; d += Math.max(0.25, span / 300)) path += `${path ? "L" : "M"}${X(d).toFixed(1)} ${Y(Math.exp(-(d - rv.day) / s)).toFixed(1)}`;
+    });
+    const ticks = history.map((rv) => `<line x1="${X(rv.day)}" x2="${X(rv.day)}" y1="${Y(1) - 4}" y2="${H - 22}" class="tick"/><text x="${X(rv.day)}" y="${H - 6}" class="lbl" text-anchor="middle">day ${rv.day}</text>`).join("");
+    const due = state.day + state.interval;
+    const dueMark = history.length ? `<line x1="${X(due)}" x2="${X(due)}" y1="${Y(1) - 4}" y2="${H - 22}" class="due"/><text x="${X(due)}" y="${Y(1) - 8}" class="duelbl" text-anchor="middle">next review: day ${due}</text>` : "";
+    svg.innerHTML = `<style>.ax{stroke:var(--rule)}.c{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round}.tick{stroke:var(--ink-3);stroke-dasharray:2 3}.due{stroke:var(--accent);stroke-width:1.4}.lbl{fill:var(--ink-3);font-size:11px;font-variant-numeric:tabular-nums}.duelbl{fill:var(--accent);font-size:11px;font-weight:600}</style>` +
+      `<line class="ax" x1="${pad}" x2="${W - pad}" y1="${H - 22}" y2="${H - 22}"/><text x="${pad}" y="${Y(1) - 8}" class="lbl">memory</text>${ticks}<path class="c" d="${path}"/>${dueMark}`;
+    const p = svg.querySelector<SVGPathElement>(".c")!;
+    const len = p.getTotalLength();
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      p.style.strokeDasharray = `${len}`;
+      animate(p, { strokeDashoffset: [len, 0], duration: 700, ease: "out(3)" });
+    }
+  };
+
+  $("[data-card]").addEventListener("click", () => flipTo(!showingBack));
+  $("[data-show]").addEventListener("click", () => flipTo(true));
+  answers.querySelectorAll<HTMLButtonElement>("button").forEach((b) => b.addEventListener("click", () => {
+    const n = next(b.dataset.a!);
+    // Jump the clock to the due date, review there, and schedule the next one.
+    const day = history.length ? state.day + state.interval : 0;
+    state = { ...n, day };
+    history.push({ day, interval: n.interval });
+    const cap = $("[data-caption]");
+    cap.textContent = history.length === 1
+      ? `Next review in ${fmt(n.interval)}. Answer again on that day and the gap grows.`
+      : `Review ${history.length} on day ${day}. Next gap: ${fmt(n.interval)}. Fewer reviews, longer memory: that's the whole idea behind AnkiDroid.`;
+    labels();
+    draw();
+    flipTo(false);
+  }));
+  $<HTMLFormElement>("[data-make]").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = new FormData(e.target as HTMLFormElement);
+    front = String(f.get("front") || "").trim() || front;
+    back = String(f.get("back") || "").trim() || back;
+    state = { interval: 0, ease: 2.5, day: 0 };
+    history = [];
+    $("[data-caption]").textContent = "New card. Flip it, then pick how well you remembered.";
+    labels();
+    draw();
+    flipTo(false);
+  });
+  labels();
+  draw();
+</script>

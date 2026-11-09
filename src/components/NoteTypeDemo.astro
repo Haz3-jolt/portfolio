@@ -1,0 +1,129 @@
+---
+// Change Note Type, demoed the way the dialog works: pick a target note type, map each old field
+// onto a new one (or to nothing), and see the cards the note turns into.
+---
+<div class="nt" data-nt>
+  <div class="types" role="group" aria-label="Convert to">
+    <span>Basic →</span>
+    <button type="button" data-type="reversed">Basic and reversed</button>
+    <button type="button" data-type="typein">Type in the answer</button>
+    <button type="button" data-type="cloze" aria-pressed="true">Cloze</button>
+    <button type="button" data-type="io">Image Occlusion</button>
+  </div>
+
+  <div class="grid">
+    <div class="note">
+      <p class="label">Current note · Basic</p>
+      <dl><dt>Front</dt><dd>The capital of France</dd><dt>Back</dt><dd>Paris</dd></dl>
+    </div>
+    <div class="map">
+      <p class="label">Fields</p>
+      <div data-map></div>
+    </div>
+    <div class="out">
+      <p class="label" data-out-label>Cards</p>
+      <div class="cards" data-cards></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nt { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
+  .types { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-4); font-size: var(--step--1); }
+  .types span { color: var(--ink-3); }
+  .types button { font: inherit; font-weight: 600; color: var(--ink-3); background: none; border: 0; padding: 0.4em 0; cursor: pointer; border-bottom: 1px solid transparent; transition: color 160ms var(--ease), border-color 160ms var(--ease); }
+  .types button:hover { color: var(--ink); }
+  .types button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+  .grid { display: grid; grid-template-columns: 1fr 1.1fr 1.4fr; gap: var(--space-5); align-items: start; }
+  .label { font-size: var(--step--1); color: var(--ink-3); font-weight: 600; margin-bottom: var(--space-2); }
+  dl { margin: 0; display: grid; gap: 2px; }
+  dt { font-size: var(--step--1); color: var(--ink-3); }
+  dd { margin: 0 0 var(--space-2); font-weight: 500; }
+  .map :global(.row) { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: var(--space-2); padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--rule) 60%, transparent); font-size: var(--step--1); }
+  .map :global(.row b) { font-weight: 600; }
+  .map :global(select) { font: inherit; font-size: var(--step--1); color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: var(--radius); padding: 4px 6px; min-height: 34px; }
+  .cards { display: grid; gap: var(--space-3); }
+  .cards :global(.c) { background: color-mix(in srgb, var(--paper) 86%, var(--ink)); border-radius: var(--radius); padding: var(--space-3) var(--space-4); text-align: center; animation: pop 280ms var(--ease); }
+  @keyframes pop { from { opacity: 0; transform: translateY(4px); } }
+  .cards :global(.c small) { display: block; font-size: 11px; color: var(--ink-3); margin-bottom: 4px; text-align: left; }
+  .cards :global(.q) { font-weight: 500; }
+  .cards :global(.a) { color: var(--accent); font-weight: 500; }
+  .cards :global(.blank) { display: inline-block; min-width: 3.4em; border-bottom: 2px solid var(--accent); color: var(--accent); cursor: pointer; }
+  .cards :global(.blank[data-open]) { border-bottom-color: transparent; }
+  .cards :global(input) { font: inherit; width: 100%; margin-top: 8px; padding: 6px 8px; border: 1px solid var(--rule); border-radius: var(--radius); background: transparent; color: var(--ink); text-align: center; }
+  .cards :global(.verdict) { font-size: var(--step--1); margin-top: 6px; min-height: 1.4em; }
+  .cards :global(svg) { width: 100%; height: auto; }
+  .cards :global(.mask) { fill: var(--accent); cursor: pointer; transition: opacity 200ms; }
+  .cards :global(.mask[data-open]) { opacity: 0; }
+  .empty { color: var(--ink-3); font-size: var(--step--1); }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-nt]")!;
+  const mapEl = root.querySelector<HTMLElement>("[data-map]")!;
+  const cardsEl = root.querySelector<HTMLElement>("[data-cards]")!;
+  const note = { Front: "The capital of France", Back: "Paris" };
+  // Target note types: their fields, and the default mapping Change Note Type would suggest.
+  const TYPES: Record<string, { name: string; fields: string[]; map: Record<string, string> }> = {
+    reversed: { name: "Basic (and reversed card)", fields: ["Front", "Back"], map: { Front: "Front", Back: "Back" } },
+    typein: { name: "Basic (type in the answer)", fields: ["Front", "Back"], map: { Front: "Front", Back: "Back" } },
+    cloze: { name: "Cloze", fields: ["Text", "Back Extra"], map: { Front: "Text", Back: "Text" } },
+    io: { name: "Image Occlusion", fields: ["Image", "Header", "Back Extra"], map: { Front: "Header", Back: "Back Extra" } },
+  };
+  let type = "cloze";
+  let mapping: Record<string, string> = { ...TYPES.cloze.map };
+  const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const into = (field: string) => Object.entries(mapping).filter(([, to]) => to === field).map(([from]) => note[from as keyof typeof note]);
+
+  const renderMap = () => {
+    const t = TYPES[type];
+    mapEl.innerHTML = Object.keys(note).map((from) => `<div class="row"><b>${from}</b><select data-from="${from}" aria-label="${from} goes to">${[...t.fields, "(nothing)"].map((f) => `<option${mapping[from] === f ? " selected" : ""}>${f}</option>`).join("")}</select></div>`).join("");
+    mapEl.querySelectorAll<HTMLSelectElement>("select").forEach((sel) => sel.addEventListener("change", () => { mapping[sel.dataset.from!] = sel.value; renderCards(); }));
+  };
+
+  const renderCards = () => {
+    const t = TYPES[type];
+    let html = "";
+    if (type === "reversed") {
+      const f = into("Front").join(" "), b = into("Back").join(" ");
+      html = f && b ? `<div class="c"><small>Card 1 · Front → Back</small><div class="q">${esc(f)}</div><div class="a">${esc(b)}</div></div><div class="c"><small>Card 2 · Back → Front</small><div class="q">${esc(b)}</div><div class="a">${esc(f)}</div></div>` : "";
+    } else if (type === "typein") {
+      const f = into("Front").join(" "), b = into("Back").join(" ");
+      html = f && b ? `<div class="c"><small>Type the answer</small><div class="q">${esc(f)}?</div><input data-typein placeholder="your answer" autocomplete="off" /><div class="verdict" data-verdict></div></div>` : "";
+    } else if (type === "cloze") {
+      const parts = into("Text");
+      if (parts.length) {
+        // Turn the mapped fields into one sentence and blank out the answer, as you would with {{c1::…}}.
+        const answer = note.Back;
+        const sentence = parts.length > 1 ? `${note.Front} is ${answer}` : parts[0];
+        const shown = sentence.includes(answer) ? esc(sentence).replace(esc(answer), `<span class="blank" data-blank>[...]</span>`) : esc(sentence);
+        html = `<div class="c"><small>Text: ${esc(sentence.replace(answer, `{{c1::${answer}}}`))}</small><div class="q">${shown}</div></div>`;
+        if (!sentence.includes(answer)) html += `<p class="empty">Map Back into Text too, so there's something to blank out.</p>`;
+      }
+    } else {
+      const header = into("Header").join(" "), extra = into("Back Extra").join(" ");
+      html = `<div class="c"><small>${esc(header || "Image Occlusion")}</small><svg viewBox="0 0 200 150" role="img" aria-label="A map of France with labels hidden; tap a box to reveal it.">
+        <path d="M70 12 L118 20 L160 40 L150 78 L168 110 L130 138 L88 132 L50 118 L36 84 L22 60 L44 40 Z" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".7"/>
+        ${[["Paris", 96, 46], ["Lyon", 128, 92], ["Marseille", 122, 126], ["Bordeaux", 58, 104]].map(([n, x, y]) => `<circle cx="${x}" cy="${y}" r="2.6" fill="currentColor"/><text x="${Number(x) + 6}" y="${Number(y) + 3}" font-size="9" fill="currentColor">${n}</text><rect class="mask" data-mask x="${Number(x) + 4}" y="${Number(y) - 7}" width="${String(n).length * 5.4 + 4}" height="13" rx="2"/>`).join("")}
+      </svg>${extra ? `<div class="a" style="font-size:.85em">${esc(extra)}</div>` : ""}</div>`;
+    }
+    cardsEl.innerHTML = html || `<p class="empty">Nothing mapped into the front of the card, so there's nothing to study.</p>`;
+    root.querySelector("[data-out-label]")!.textContent = `${t.name} · ${cardsEl.querySelectorAll(".c").length || 0} card${cardsEl.querySelectorAll(".c").length === 1 ? "" : "s"}`;
+    cardsEl.querySelectorAll<HTMLElement>("[data-blank]").forEach((b) => b.addEventListener("click", () => { b.toggleAttribute("data-open"); b.textContent = b.hasAttribute("data-open") ? note.Back : "[...]"; }));
+    cardsEl.querySelectorAll<SVGRectElement>("[data-mask]").forEach((m) => m.addEventListener("click", () => m.toggleAttribute("data-open")));
+    const input = cardsEl.querySelector<HTMLInputElement>("[data-typein]");
+    input?.addEventListener("input", () => {
+      const v = input.value.trim().toLowerCase(), want = into("Back").join(" ").toLowerCase();
+      cardsEl.querySelector("[data-verdict]")!.textContent = !v ? "" : v === want ? "Correct" : want.startsWith(v) ? "…" : `Not quite: ${into("Back").join(" ")}`;
+    });
+  };
+
+  root.querySelectorAll<HTMLButtonElement>("[data-type]").forEach((b) => b.addEventListener("click", () => {
+    type = b.dataset.type!;
+    mapping = { ...TYPES[type].map };
+    root.querySelectorAll("[data-type]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    renderMap(); renderCards();
+  }));
+  renderMap(); renderCards();
+</script>

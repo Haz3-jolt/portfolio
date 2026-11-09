@@ -1,0 +1,39 @@
+---
+import "@fontsource-variable/schibsted-grotesk";
+import "@fontsource/ibm-plex-mono/400.css";
+import "../styles/global.css";
+import "../styles/iso.css";
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="theme-color" content="#1c1b19" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script is:inline>
+      (() => {
+        let t = null;
+        try { t = localStorage.getItem("theme"); } catch {}
+        if (t !== "light" && t !== "dark") t = "dark";
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+    <script>
+      import { applyTexture } from "../lib/texture";
+      import { startAsciiField } from "../lib/ascii-field";
+      applyTexture();
+      document.addEventListener("themechange", applyTexture);
+      startAsciiField();
+    </script>
+  </body>
+</html>

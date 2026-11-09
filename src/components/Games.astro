@@ -1,0 +1,77 @@
+---
+// The arcade behind the 2017 CRT. Games load (with three.js) only when the dialog opens.
+---
+<dialog class="games" data-games aria-label="Arcade">
+  <div class="bar">
+    <div class="tabs" role="group" aria-label="Pick a game">
+      <button type="button" data-game="hop" aria-pressed="true">Bench Hop</button>
+      <button type="button" data-game="stack" aria-pressed="false">Stacker</button>
+      <button type="button" data-game="doom" aria-pressed="false">Doom</button>
+    </div>
+    <button type="button" class="close" data-close aria-label="Close">×</button>
+  </div>
+  <div class="screen" data-screen>
+    <div class="hud"><span data-score></span><span data-hint></span></div>
+  </div>
+  <p class="note" data-note hidden>Shareware DOOM (id Software) on the original linuxdoom source, compiled to WebAssembly by <a href="https://github.com/diekmann/wasm-fizzbuzz" target="_blank" rel="noopener">diekmann/wasm-fizzbuzz</a> (GPL-2.0). Arrows move, Ctrl fires, Space opens doors, Shift runs. About 7 MB on first load.</p>
+</dialog>
+<style>
+  .games { border: 0; padding: var(--space-4); border-radius: 12px; background: #0f0e0d; color: #ece5d3; width: min(94vw, 760px); }
+  .games::backdrop { background: rgb(0 0 0 / 0.65); }
+  .games[open] { animation: rise 260ms var(--ease); }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px) scale(0.98); } }
+  .bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); }
+  .tabs { display: flex; gap: var(--space-5); }
+  .tabs button { font: inherit; font-size: var(--step--1); font-weight: 600; color: #8a8475; background: none; border: 0; padding: 0.4em 0; cursor: pointer; border-bottom: 1px solid transparent; }
+  .tabs button[aria-pressed="true"] { color: #ece5d3; border-bottom-color: #ff6a3d; }
+  .close { font: inherit; font-size: 1.5rem; line-height: 1; width: 40px; height: 40px; border-radius: 50%; border: 0; background: none; color: #8a8475; cursor: pointer; }
+  .close:hover { color: #ff6a3d; }
+  .screen { position: relative; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #1c1b19; }
+  .screen :global(canvas) { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; touch-action: none; outline: none; }
+  .screen::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgb(0 0 0 / 0.14) 0 1px, transparent 1px 3px); }
+  .hud { position: absolute; inset: 12px 14px auto; display: flex; justify-content: space-between; gap: 1rem; z-index: 2; pointer-events: none; font-family: var(--font-mono); font-size: 13px; color: #ece5d3; text-shadow: 0 1px 0 #000; }
+  .hud [data-hint] { color: #ff6a3d; }
+  .screen :global(iframe) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .note { margin-top: var(--space-2); font-size: var(--step--1); color: #8a8475; }
+  .note a { color: #b5ad9a; }
+</style>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("[data-games]")!;
+  const screen = dialog.querySelector<HTMLElement>("[data-screen]")!;
+  const hud = { score: dialog.querySelector<HTMLElement>("[data-score]")!, hint: dialog.querySelector<HTMLElement>("[data-hint]")! };
+  const tabs = [...dialog.querySelectorAll<HTMLButtonElement>("[data-game]")];
+  let stop: (() => void) | null = null;
+  const note = dialog.querySelector<HTMLElement>("[data-note]")!;
+  const clear = () => { stop?.(); stop = null; screen.querySelector("canvas")?.remove(); screen.querySelector("iframe")?.remove(); };
+  let token = 0; // bumps on every switch, so a game that finishes loading late doesn't start
+  const play = async (which: "hop" | "stack" | "doom") => {
+    const mine = ++token;
+    clear();
+    note.hidden = which !== "doom";
+    tabs.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.game === which)));
+    if (which === "doom") {
+      hud.score.textContent = ""; hud.hint.textContent = "";
+      const frame = document.createElement("iframe");
+      frame.src = "/doom/index.html";
+      frame.title = "DOOM";
+      frame.allow = "fullscreen";
+      screen.prepend(frame);
+      frame.addEventListener("load", () => frame.focus());
+      return;
+    }
+    const canvas = document.createElement("canvas");
+    canvas.tabIndex = 0;
+    screen.prepend(canvas);
+    tabs.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.game === which)));
+    hud.score.textContent = ""; hud.hint.textContent = "loading…";
+    const { startArcade3d } = await import("../lib/games3d");
+    if (!dialog.open || mine !== token) return;
+    stop = startArcade3d(canvas, which, hud);
+    canvas.focus();
+  };
+  tabs.forEach((b) => b.addEventListener("click", () => play(b.dataset.game as "hop" | "stack" | "doom")));
+  document.addEventListener("open-games", () => { if (!dialog.open) { dialog.showModal(); play("hop"); } });
+  dialog.addEventListener("close", () => { token++; clear(); });
+  dialog.querySelector("[data-close]")!.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
+</script>

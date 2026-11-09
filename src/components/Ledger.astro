@@ -1,0 +1,51 @@
+---
+// The epilogue, kept small: the eight latest merged PRs, and every other repo as one line of links.
+import data from "../data/github.json";
+
+type PR = { repo: string; number: number; title: string; merged: string; url: string };
+const HIDE = /sandbox|demo-repo/i;
+const prs = (data.prs as PR[]).filter((p) => !HIDE.test(p.repo));
+const latest = prs.slice(0, 8);
+const short = (repo: string) => repo.split("/")[1];
+const date = (d: string) => new Date(`${d}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+
+const SKIP = /sandbox|demo-repo|Notes$|portfolio-site|SDB_Mini|DS-Miniproject|java-script-based-design/i;
+const contributed = (data.contributed as any[]).filter((r) => !SKIP.test(r.name)).map((r) => ({ name: short(r.name), url: r.url }));
+const own = (data.own as any[]).filter((r) => !SKIP.test(r.name) && (r.description || r.language)).map((r) => ({ name: short(r.name), url: r.url }));
+---
+<section class="ledger wrap" id="ledger" aria-labelledby="ledger-title">
+  <h2 id="ledger-title">Still going</h2>
+  <p class="lede">{prs.length} merged pull requests and counting. The latest:</p>
+  <ol>
+    {latest.map((p) => (
+      <li>
+        <a href={p.url} target="_blank" rel="noopener">{p.title}</a>
+        <span>{short(p.repo)} · {date(p.merged)}</span>
+      </li>
+    ))}
+  </ol>
+  <p class="all"><a href="https://github.com/pulls?q=is%3Apr+author%3AHaz3-jolt+is%3Amerged" target="_blank" rel="noopener">All {prs.length} on GitHub ↗</a></p>
+
+  <div class="repos">
+    <p><span>Contributed to</span> {contributed.map((r, i) => <><a href={r.url} target="_blank" rel="noopener">{r.name}</a>{i < contributed.length - 1 ? ", " : ""}</>)}</p>
+    <p><span>My own</span> {own.map((r, i) => <><a href={r.url} target="_blank" rel="noopener">{r.name}</a>{i < own.length - 1 ? ", " : ""}</>)}</p>
+  </div>
+</section>
+
+<style>
+  .ledger { padding-block: var(--space-7) var(--space-6); max-width: min(100% - 2 * var(--gutter), 44rem); margin-inline: auto; }
+  h2 { font-size: var(--step-2); margin-bottom: var(--space-2); }
+  .lede { color: var(--ink-2); margin-bottom: var(--space-3); }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { display: flex; justify-content: space-between; gap: var(--space-4); padding: 0.35rem 0; font-size: var(--step--1); border-bottom: 1px solid color-mix(in srgb, var(--rule) 50%, transparent); }
+  li a { text-decoration: none; color: var(--ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  li a:hover { color: var(--accent); }
+  li span { color: var(--ink-3); white-space: nowrap; }
+  .all { margin-top: var(--space-3); font-size: var(--step--1); }
+  .all a { color: var(--ink-2); }
+  .repos { margin-top: var(--space-6); display: grid; gap: var(--space-3); font-size: var(--step--1); color: var(--ink-3); line-height: 1.7; }
+  .repos span { display: block; color: var(--ink-2); font-weight: 600; }
+  .repos a { color: var(--ink-2); }
+  .repos a:hover { color: var(--accent); }
+  @media (max-width: 560px) { li { flex-direction: column; gap: 0; } li a { white-space: normal; } }
+</style>

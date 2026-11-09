@@ -1,0 +1,11 @@
+---
+// Phosphor icons (regular weight), inlined at build so there is no icon font or extra request.
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+interface Props { name: string; size?: number }
+const { name, size = 22 } = Astro.props;
+const dir = join(process.cwd(), "node_modules", "@phosphor-icons", "core", "assets", "regular");
+const raw = readFileSync(join(dir, `${name}.svg`), "utf8")
+  .replace("<svg", `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false" fill="currentColor"`);
+---
+<Fragment set:html={raw} />

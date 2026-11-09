@@ -1,0 +1,48 @@
+---
+import Icon from "./Icon.astro";
+const EMAIL = "harisrini21@gmail.com";
+const links = [
+  { label: "Email", icon: "envelope", href: `mailto:${EMAIL}`, copy: EMAIL },
+  { label: "LinkedIn", icon: "linkedin-logo", href: "https://www.linkedin.com/in/hari-srinivasan-b0633a2b8/" },
+  { label: "GitHub", icon: "github-logo", href: "https://github.com/Haz3-jolt" },
+];
+interface Props { size?: "md" | "lg" }
+const { size = "md" } = Astro.props;
+---
+<ul class="contact" data-size={size}>
+  {links.map((l) => (
+    <li>
+      <a href={l.href} aria-label={l.label} data-tip={l.label} data-copy={l.copy} target={l.copy ? undefined : "_blank"} rel={l.copy ? undefined : "noopener"}>
+        <Icon name={l.icon} size={size === "lg" ? 26 : 22} />
+      </a>
+    </li>
+  ))}
+</ul>
+<style>
+  .contact { display: flex; gap: var(--space-2); list-style: none; margin: 0; padding: 0; }
+  .contact a {
+    position: relative; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+    color: var(--ink-2); transition: color 160ms var(--ease), background-color 160ms var(--ease), transform 160ms var(--ease);
+  }
+  .contact[data-size="lg"] a { width: 52px; height: 52px; color: var(--ink); }
+  .contact a:hover { color: var(--accent); background: var(--accent-soft); }
+  .contact a:active { transform: scale(0.94); }
+  .contact a::after {
+    content: attr(data-tip); position: absolute; top: calc(100% + 4px); left: 50%; translate: -50% -2px;
+    font-size: var(--step--1); white-space: nowrap; color: var(--ink-2); pointer-events: none;
+    opacity: 0; transition: opacity 160ms var(--ease), translate 160ms var(--ease);
+  }
+  .contact a:hover::after, .contact a:focus-visible::after, .contact a[data-copied]::after { opacity: 1; translate: -50% 0; }
+  .contact a[data-copied]::after { content: "Copied " attr(data-copy); color: var(--accent); }
+</style>
+<script>
+  // Email: open the mail app as usual, and also copy the address with a short confirmation.
+  document.querySelectorAll<HTMLAnchorElement>(".contact a[data-copy]").forEach((a) => {
+    a.addEventListener("click", () => {
+      navigator.clipboard?.writeText(a.dataset.copy!).then(() => {
+        a.setAttribute("data-copied", "");
+        setTimeout(() => a.removeAttribute("data-copied"), 1800);
+      }).catch(() => {});
+    });
+  });
+</script>

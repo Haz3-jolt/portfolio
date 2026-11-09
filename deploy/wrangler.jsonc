@@ -1,0 +1,10 @@
+{
+  // harisrinivasan.dev: a static site served by Cloudflare as a Worker with static assets only.
+  // No Worker script runs; static asset requests are free on the Workers free plan.
+  // Deploy with: npm run deploy
+  "name": "harisrinivasan",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "../dist", "not_found_handling": "404-page" },
+  "routes": [{ "pattern": "harisrinivasan.dev", "custom_domain": true }],
+  "workers_dev": false
+}

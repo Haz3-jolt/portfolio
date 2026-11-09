@@ -1,0 +1,3991 @@
+{
+ "fetched": "2026-11-09T16:50:52.475Z",
+ "stats": {
+  "mergedPRs": 527,
+  "reposContributed": 10,
+  "ownRepos": 26
+ },
+ "prs": [
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 2042,
+   "title": "docs: refresh AGENTS.md for 1.17 development",
+   "merged": "2026-11-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/2042"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 2005,
+   "title": "fix(ci): count GHCR pulls from legacy org too",
+   "merged": "2026-10-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/2005"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 2004,
+   "title": "fix(opencode): report sessions without an agent",
+   "merged": "2026-10-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/2004"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 2002,
+   "title": "docs: update README architecture diagram",
+   "merged": "2026-10-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/2002"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 2000,
+   "title": "chore(release): v1.16.0",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/2000"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1999,
+   "title": "chore: start 1.17 development",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1999"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1997,
+   "title": "chore: describe the project as a resource registry",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1997"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1996,
+   "title": "ci: pin pluggy below 1.7 for the ScanCode scan",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1996"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1995,
+   "title": "docs: shorten the README rename note to a quote",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1995"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1994,
+   "title": "docs: update CLA to v2.0 for Observal Inc.",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1994"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1993,
+   "title": "chore: replace logo with the new registry mark",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1993"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1992,
+   "title": "docs: rename Observal to Agentic Resource Registry",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1992"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1991,
+   "title": "build(deps): fix dependency-audit CVE findings",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1991"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1990,
+   "title": "refactor!: move repo and drop npm publishing",
+   "merged": "2026-10-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1990"
+  },
+  {
+   "repo": "aryaniyaps/sdp-2026",
+   "number": 7,
+   "title": "Restructure Chapter 3 of the report",
+   "merged": "2026-10-27",
+   "url": "https://github.com/aryaniyaps/sdp-2026/pull/7"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1852,
+   "title": "chore(release): v1.15.0",
+   "merged": "2026-10-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1852"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1851,
+   "title": "chore: start 1.16 development",
+   "merged": "2026-10-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1851"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1849,
+   "title": "feat(release): open main dev-version bump PR after cut",
+   "merged": "2026-10-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1849"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1815,
+   "title": "chore: start 1.15 development",
+   "merged": "2026-10-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1815"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1810,
+   "title": "ci: stop CodeQL in merge queue, bump vulnerable deps",
+   "merged": "2026-10-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1810"
+  },
+  {
+   "repo": "aryaniyaps/sdp-2026",
+   "number": 4,
+   "title": "Make cross-session Pi memory work end to end",
+   "merged": "2026-10-06",
+   "url": "https://github.com/aryaniyaps/sdp-2026/pull/4"
+  },
+  {
+   "repo": "aryaniyaps/sdp-2026",
+   "number": 1,
+   "title": "Distil the 14B extractor into a 1.7B student",
+   "merged": "2026-10-06",
+   "url": "https://github.com/aryaniyaps/sdp-2026/pull/1"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 492,
+   "title": "docs: rewrite the README and move customization to its own page",
+   "merged": "2026-10-05",
+   "url": "https://github.com/Observal/Axl/pull/492"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1807,
+   "title": "chore(release): remove Homebrew tap job and detection",
+   "merged": "2026-10-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1807"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1806,
+   "title": "chore(release): v1.14.0",
+   "merged": "2026-10-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1806"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1805,
+   "title": "feat(release): flags for non-interactive release notes",
+   "merged": "2026-10-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1805"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1804,
+   "title": "fix(release): retry and parallelize GitHub PR lookups",
+   "merged": "2026-10-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1804"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1801,
+   "title": "feat(release): publish from maintained branches",
+   "merged": "2026-10-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1801"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1797,
+   "title": "docs: add contributor payments policy",
+   "merged": "2026-10-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1797"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 10,
+   "title": "chore(release): v1.1.1",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/10"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 9,
+   "title": "[1.1] fix: queue releases and recheck alias promotion",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/9"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 8,
+   "title": "fix: queue releases and recheck alias promotion",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/8"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 7,
+   "title": "chore(release): v1.2.0",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/7"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 6,
+   "title": "chore(release): v1.1.0",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/6"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 5,
+   "title": "chore(release): v1.1.0-rc.1",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/5"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 4,
+   "title": "[1.1] fix: exercise keyless signing and artifact verification",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/4"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 3,
+   "title": "fix: exercise keyless signing and artifact verification",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/3"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 2,
+   "title": "feat: future-only feature",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/2"
+  },
+  {
+   "repo": "Haz3-jolt/observal-release-sandbox",
+   "number": 1,
+   "title": "chore(release): v1.1.0-beta.1",
+   "merged": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox/pull/1"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1787,
+   "title": "build: faster rebuild-fast (bytecode, parallel typecheck, Vite 8)",
+   "merged": "2026-10-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1787"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 398,
+   "title": "feat(runtime): stabilize context, interactions, compaction, and capabilities",
+   "merged": "2026-09-25",
+   "url": "https://github.com/Observal/Axl/pull/398"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1750,
+   "title": "fix(clickhouse): eliminate vendor egress paths",
+   "merged": "2026-09-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1750"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 393,
+   "title": "feat: complete shared command plane and refine web UI",
+   "merged": "2026-09-13",
+   "url": "https://github.com/Observal/Axl/pull/393"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 384,
+   "title": "fix: make turns, shutdown, and model requests recoverable",
+   "merged": "2026-09-06",
+   "url": "https://github.com/Observal/Axl/pull/384"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1717,
+   "title": "chore(release): v1.13.1",
+   "merged": "2026-09-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1717"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1716,
+   "title": "fix(release): bundle harness model data",
+   "merged": "2026-09-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1716"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1715,
+   "title": "fix(release): use npm trusted publishing",
+   "merged": "2026-09-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1715"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 378,
+   "title": "fix(tui): improve tool details and image paste",
+   "merged": "2026-09-05",
+   "url": "https://github.com/Observal/Axl/pull/378"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 20,
+   "title": "feat: add portable sessions and automation resources",
+   "merged": "2026-09-04",
+   "url": "https://github.com/Observal/Axl/pull/20"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 19,
+   "title": "fix(kernel): serialize file mutations",
+   "merged": "2026-09-04",
+   "url": "https://github.com/Observal/Axl/pull/19"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 9,
+   "title": "docs: clarify independent implementation provenance",
+   "merged": "2026-09-02",
+   "url": "https://github.com/Observal/Axl/pull/9"
+  },
+  {
+   "repo": "Observal/Axl",
+   "number": 7,
+   "title": "feat(release): add governed release pipeline",
+   "merged": "2026-09-02",
+   "url": "https://github.com/Observal/Axl/pull/7"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1699,
+   "title": "chore(release): v1.13.0",
+   "merged": "2026-08-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1699"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1692,
+   "title": "feat(web): revamp registry home",
+   "merged": "2026-08-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1692"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1691,
+   "title": "feat(cli)!: make Observal agent-ready",
+   "merged": "2026-08-16",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1691"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1690,
+   "title": "feat(cli)!: add help and error contracts",
+   "merged": "2026-08-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1690"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18248,
+   "title": "CI test for 16kb and non-16kb page alignment",
+   "merged": "2026-08-11",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18248"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1685,
+   "title": "chore(release): v1.12.1",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1685"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1684,
+   "title": "fix(security): harden diagnostics and CodeQL",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1684"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1683,
+   "title": "fix(teams): correct teamspace lifecycle access",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1683"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1682,
+   "title": "fix(release): update gitsign verification",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1682"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1681,
+   "title": "fix(release): validate current notes format",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1681"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1680,
+   "title": "chore(release): v1.12.0",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1680"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1679,
+   "title": "fix(build): preserve debug symbols",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1679"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1678,
+   "title": "ci: target canonical Codecov project",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1678"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1677,
+   "title": "test: raise Python coverage with focused suites",
+   "merged": "2026-08-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1677"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1676,
+   "title": "fix(installer): support headless setup",
+   "merged": "2026-08-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1676"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1674,
+   "title": "feat(security): meet OpenSSF security criteria",
+   "merged": "2026-08-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1674"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1662,
+   "title": "fix(init): only stamp alembic HEAD on a genuinely fresh database",
+   "merged": "2026-08-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1662"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1658,
+   "title": "fix(release): remove duplicate title and contributors section from release notes",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1658"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1657,
+   "title": "docs(readme): remove repetition between How It Works and feature sections",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1657"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1656,
+   "title": "fix(release): make pypi, npm, and helm jobs resume-safe",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1656"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1655,
+   "title": "fix(release): attestation verify identity and resume-safe publish jobs",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1655"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1653,
+   "title": "chore(release): v1.11.0",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1653"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1652,
+   "title": "ci: run pytest in parallel across cores with pytest-xdist",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1652"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1651,
+   "title": "fix(release): resolve release tags to SHAs to survive background tag pruning",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1651"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1650,
+   "title": "revert: drop redundant workflow_dispatch prerelease override flag",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1650"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1648,
+   "title": "ci: pin dependencies, attach signed release provenance, and docs fixes",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1648"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1645,
+   "title": "build: fix root lockfile vulns and scope workflow token permissions",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1645"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1644,
+   "title": "ci: support linear releases and merge queue",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1644"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1643,
+   "title": "ci: add OpenSSF Scorecard",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1643"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1642,
+   "title": "feat(release): add curated release pipeline",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1642"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1641,
+   "title": "refactor(scope): remove legacy tenant scaffold",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1641"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1640,
+   "title": "feat(registry): add team publishing and team-private visibility",
+   "merged": "2026-08-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1640"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1619,
+   "title": "feat(registry): add teamspace membership and handle reservation",
+   "merged": "2026-08-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1619"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1637,
+   "title": "bump(release): v1.10.7",
+   "merged": "2026-07-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1637"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1636,
+   "title": "test: static fake API keys fixture with regenerator",
+   "merged": "2026-07-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1636"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1635,
+   "title": "test: add 240 fake API keys across 12 more providers",
+   "merged": "2026-07-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1635"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1634,
+   "title": "docs(readme): add CLA assistant badge",
+   "merged": "2026-07-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1634"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1622,
+   "title": "bump(release): v1.10.4",
+   "merged": "2026-07-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1622"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1621,
+   "title": "fix(cli): remove silent auto-update, surface version notices instead",
+   "merged": "2026-07-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1621"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1620,
+   "title": "fix(cli): exempt auth from auto-update so downgrades stick",
+   "merged": "2026-07-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1620"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1617,
+   "title": "feat(registry): add canonical namespaces",
+   "merged": "2026-07-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1617"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1616,
+   "title": "fix: simplify harness issue template",
+   "merged": "2026-07-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1616"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1615,
+   "title": "bump(release): v1.10.3",
+   "merged": "2026-07-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1615"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1613,
+   "title": "bump(release): v1.10.2",
+   "merged": "2026-07-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1613"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1606,
+   "title": "bump(release): v1.10.1",
+   "merged": "2026-07-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1606"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1605,
+   "title": "bump(release): v1.10.0",
+   "merged": "2026-07-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1605"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1604,
+   "title": "refactor(telemetry): remove obsolete MCP wrappers",
+   "merged": "2026-07-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1604"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1598,
+   "title": "feat(telemetry): make session ingestion reliable",
+   "merged": "2026-07-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1598"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1595,
+   "title": "docs: remove commercial product language",
+   "merged": "2026-07-16",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1595"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1594,
+   "title": "refactor: open-source all Observal features",
+   "merged": "2026-07-16",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1594"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1576,
+   "title": "bump(release): v1.9.9",
+   "merged": "2026-07-07",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1576"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1575,
+   "title": "fix(server,web): resolve latest open issues",
+   "merged": "2026-07-07",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1575"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1574,
+   "title": "docs: remove BlazeUp references",
+   "merged": "2026-07-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1574"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1573,
+   "title": "docs: add license commitment",
+   "merged": "2026-07-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1573"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1572,
+   "title": "docs: clarify enterprise license boundary",
+   "merged": "2026-07-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1572"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1571,
+   "title": "chore: relicense core as Apache 2.0",
+   "merged": "2026-07-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1571"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1550,
+   "title": "fix(pi): resolve latest telemetry version",
+   "merged": "2026-07-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1550"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1545,
+   "title": "bump(release): v1.9.8",
+   "merged": "2026-07-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1545"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1544,
+   "title": "fix(cli): show installer upgrade commands",
+   "merged": "2026-07-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1544"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1532,
+   "title": "feat(web): update brand assets",
+   "merged": "2026-06-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1532"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1531,
+   "title": "feat(sandbox): add runtime examples and docs",
+   "merged": "2026-06-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1531"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1530,
+   "title": "fix(clickhouse): add versioned migrations",
+   "merged": "2026-06-28",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1530"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1529,
+   "title": "bump(release): v1.9.5",
+   "merged": "2026-06-28",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1529"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1528,
+   "title": "bump(release): v1.9.4",
+   "merged": "2026-06-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1528"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1527,
+   "title": "docs: show Discord member count badge",
+   "merged": "2026-06-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1527"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1525,
+   "title": "chore: update org namespace references",
+   "merged": "2026-06-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1525"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1521,
+   "title": "bump(release): v1.9.3",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1521"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1520,
+   "title": "feat(search): add trigram user search",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1520"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1519,
+   "title": "feat(sso): move SSO settings into dynamic config",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1519"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1518,
+   "title": "fix(users): show locked super admin roles",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1518"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1517,
+   "title": "fix(web): add insights selection toggle",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1517"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1516,
+   "title": "feat(registry): improve search and setup flows",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1516"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1515,
+   "title": "fix(exec): cache management insights",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1515"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1514,
+   "title": "fix(cli): remove ops overview command",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1514"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1513,
+   "title": "fix: hide deleted agents from leaderboards",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1513"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1512,
+   "title": "feat(web): use code editor in component edit forms",
+   "merged": "2026-06-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1512"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1511,
+   "title": "feat(web): add skill script code editor",
+   "merged": "2026-06-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1511"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1510,
+   "title": "feat(web): add MCP config code editor",
+   "merged": "2026-06-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1510"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1509,
+   "title": "refactor: remove dead telemetry tables",
+   "merged": "2026-06-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1509"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1508,
+   "title": "docs(integrations): document harness attribution",
+   "merged": "2026-06-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1508"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1507,
+   "title": "bump(release): v1.9.2",
+   "merged": "2026-06-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1507"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1506,
+   "title": "fix(opencode): attribute sessions by agent id",
+   "merged": "2026-06-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1506"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1505,
+   "title": "fix(kiro): attribute sessions by agent id",
+   "merged": "2026-06-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1505"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1504,
+   "title": "agent attribution v3",
+   "merged": "2026-06-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1504"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1500,
+   "title": "fix(sessions): resolve agent version lookup",
+   "merged": "2026-06-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1500"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1499,
+   "title": "feat(insights): use LiteLLM models",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1499"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1497,
+   "title": "fix(settings): restore harness settings",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1497"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1493,
+   "title": "bump(release): v1.9.1",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1493"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1492,
+   "title": "fix(docker): select pnpm binary by arch",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1492"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1491,
+   "title": "bump(release): v1.9.0",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1491"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1490,
+   "title": "feat(auth): add self registration",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1490"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1488,
+   "title": "feat(harness): refactor registry targets",
+   "merged": "2026-06-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1488"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1486,
+   "title": "feat: update agent targets and cursor output",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1486"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1485,
+   "title": "fix(cli): stream remote logs",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1485"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1484,
+   "title": "fix(web): make clipboard copy reliable",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1484"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1483,
+   "title": "bump(release): v1.8.0",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1483"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1482,
+   "title": "bump(release): v1.7.0",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1482"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1481,
+   "title": "fix(insights): improve facet coverage",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1481"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1480,
+   "title": "feat(registry): archive components",
+   "merged": "2026-06-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1480"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1477,
+   "title": "feat(registry): enforce unique names",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1477"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1475,
+   "title": "refactor: trim unused registry and UI code",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1475"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1472,
+   "title": "fix(web): sync agent version details",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1472"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1469,
+   "title": "fix(version): enforce cli server parity",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1469"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1468,
+   "title": "fix(home): clean up cockpit overview",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1468"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1465,
+   "title": "build: add fast Docker rebuild target",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1465"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1460,
+   "title": "fix(ci): resolve dependency audit failures",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1460"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1459,
+   "title": "feat(deploy): make observability optional",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1459"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1457,
+   "title": "fix(insights): count legacy unversioned sessions",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1457"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1443,
+   "title": "refactor(server): split app startup",
+   "merged": "2026-06-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1443"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1438,
+   "title": "refactor(cli): move active IDE detection into adapters",
+   "merged": "2026-06-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1438"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1437,
+   "title": "refactor(cli): move layer attribution into adapters",
+   "merged": "2026-06-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1437"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1436,
+   "title": "refactor(ide): derive metadata from registries",
+   "merged": "2026-06-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1436"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1434,
+   "title": "docs(readme): clarify registry positioning",
+   "merged": "2026-06-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1434"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1431,
+   "title": "bump(release): v1.6.0",
+   "merged": "2026-06-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1431"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1430,
+   "title": "feat(insights): add version-aware report generation",
+   "merged": "2026-06-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1430"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1428,
+   "title": "chore(compliance): remove VSA integrations",
+   "merged": "2026-06-12",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1428"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1417,
+   "title": "feat(registry): align install UX and co-author CLI structure",
+   "merged": "2026-06-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1417"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1415,
+   "title": "feat(feedback): enforce one review per user with full CRUD and anonymous support",
+   "merged": "2026-06-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1415"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1414,
+   "title": "docs(install): add server install section to installation guide",
+   "merged": "2026-06-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1414"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1413,
+   "title": "fix(audit): repair silent data loss and clean up docs",
+   "merged": "2026-06-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1413"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1410,
+   "title": "fix(ide): standardize skill paths to Agent Skills spec for all IDEs",
+   "merged": "2026-06-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1410"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1399,
+   "title": "bump(release): v1.5.0",
+   "merged": "2026-06-09",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1399"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1398,
+   "title": "refactor(doctor): add full IDE parity for diagnose, patch, cleanup, and layer scan",
+   "merged": "2026-06-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1398"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1396,
+   "title": "perf(server): hot path optimizations for ingest, resolution, and registry",
+   "merged": "2026-06-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1396"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1393,
+   "title": "refactor: remove dead code, unreachable branches, and orphaned modules",
+   "merged": "2026-06-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1393"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1390,
+   "title": "chore(web): remove 7 unused frontend dependencies",
+   "merged": "2026-06-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1390"
+  },
+  {
+   "repo": "Haz3-jolt/demo-repo",
+   "number": 1,
+   "title": "Slm",
+   "merged": "2026-06-06",
+   "url": "https://github.com/Haz3-jolt/demo-repo/pull/1"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1342,
+   "title": "feat: lock file, version pinning, and version-aware insights",
+   "merged": "2026-06-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1342"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1331,
+   "title": "bump(release): v1.4.4",
+   "merged": "2026-06-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1331"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1328,
+   "title": "feat(insights): per-agent insights tab for owners and co-authors",
+   "merged": "2026-06-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1328"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1319,
+   "title": "refactor(cli): consolidate command structure, remove duplicates",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1319"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1316,
+   "title": "bump(release): v1.4.3",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1316"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1307,
+   "title": "feat: move insights out of ee/ and remove license gate",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1307"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1305,
+   "title": "bump(release): v1.4.1",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1305"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1301,
+   "title": "bump(release): v1.4.0",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1301"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1300,
+   "title": "perf: server optimization for 500-1000 concurrent users",
+   "merged": "2026-05-31",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1300"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1295,
+   "title": "bump(release): v1.3.1",
+   "merged": "2026-05-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1295"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1282,
+   "title": "feat(web): migrate from Next.js to Vite + TanStack Router",
+   "merged": "2026-05-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1282"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1281,
+   "title": "fix: restructure LICENSE for GitHub detection and move license-policy",
+   "merged": "2026-05-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1281"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1280,
+   "title": "chore: remove outdated docs, images, and stale references",
+   "merged": "2026-05-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1280"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1274,
+   "title": "bump(release): v1.3.0",
+   "merged": "2026-05-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1274"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1272,
+   "title": "refactor: standardize Optic logging — SSE streaming, descriptive logs, ring buffer",
+   "merged": "2026-05-29",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1272"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1257,
+   "title": "fix: Kiro credits, traces UX, auth, insights, and misc fixes",
+   "merged": "2026-05-28",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1257"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1254,
+   "title": "fix(web,server): remove score column and fix Kiro credits double-counting",
+   "merged": "2026-05-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1254"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1253,
+   "title": "refactor: structural quality improvements (sentrux 3886 → 6043)",
+   "merged": "2026-05-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1253"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1252,
+   "title": "bump(release): v1.2.1",
+   "merged": "2026-05-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1252"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1248,
+   "title": "fix(auth): preserve next param through SSO device flow and remove CLI login defaults",
+   "merged": "2026-05-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1248"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1246,
+   "title": "bump(release): v1.2.0",
+   "merged": "2026-05-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1246"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1245,
+   "title": "feat: add co-authoring for agents and components",
+   "merged": "2026-05-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1245"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1242,
+   "title": "feat(skills): add registry_direct delivery mode for inline skill submission",
+   "merged": "2026-05-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1242"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1239,
+   "title": "refactor!: remove agent visibility feature",
+   "merged": "2026-05-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1239"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1234,
+   "title": "docs: rewrite README with updated screenshots and current feature set",
+   "merged": "2026-05-26",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1234"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1228,
+   "title": "feat(insights): ground-up V5 rewrite modeled after pi /insights",
+   "merged": "2026-05-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1228"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1222,
+   "title": "bump(release): v1.1.0",
+   "merged": "2026-05-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1222"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1215,
+   "title": "docs: rewrite AGENTS.md files to reflect current architecture",
+   "merged": "2026-05-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1215"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1214,
+   "title": "build: sync pi-extension version in release script",
+   "merged": "2026-05-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1214"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1213,
+   "title": "fix(web): use local fonts, serve IDE list from server, fix builder UI",
+   "merged": "2026-05-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1213"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1205,
+   "title": "feat(audit): implement HIPAA-grade loguru audit system",
+   "merged": "2026-05-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1205"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1203,
+   "title": "bump(release): v1.0.0",
+   "merged": "2026-05-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1203"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1201,
+   "title": "chore: remove eval system entirely",
+   "merged": "2026-05-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1201"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1194,
+   "title": "refactor(ide): phase 4/5/6, scanner migration, builder consolidation, OTLP removal",
+   "merged": "2026-05-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1194"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1190,
+   "title": "refactor(ide): CLI adapter protocol, feature-flag gating, vscode removal",
+   "merged": "2026-05-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1190"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1186,
+   "title": "refactor(ide): modular adapter architecture for config generation",
+   "merged": "2026-05-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1186"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1176,
+   "title": "refactor(api): split agent and admin route monoliths into sub-packages",
+   "merged": "2026-05-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1176"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1172,
+   "title": "refactor: remove DEPLOYMENT_MODE, gate enterprise features solely by license key",
+   "merged": "2026-05-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1172"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1171,
+   "title": "docs(env): uncomment SAML and license vars in .env.example",
+   "merged": "2026-05-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1171"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1170,
+   "title": "docs(env): add OBSERVAL_LICENSE_KEY to .env.example",
+   "merged": "2026-05-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1170"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1168,
+   "title": "refactor(worker): split job definitions into jobs/ subpackage",
+   "merged": "2026-05-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1168"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1166,
+   "title": "bump(release): v0.8.0",
+   "merged": "2026-05-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1166"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1162,
+   "title": "fix(badges): query GHCR pulls via repository scope",
+   "merged": "2026-05-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1162"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1161,
+   "title": "fix(badges): use GraphQL to fetch real GHCR pull counts",
+   "merged": "2026-05-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1161"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1160,
+   "title": "docs(readme): expand badge bar with live GHCR pulls, PyPI, CI, and community badges",
+   "merged": "2026-05-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1160"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1091,
+   "title": "feat(builder): create and submit new components from agent builder",
+   "merged": "2026-05-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1091"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1089,
+   "title": "fix(review): render YAML instead of JSON, expand all components by default",
+   "merged": "2026-05-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1089"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1087,
+   "title": "refactor(agent): remove goal template, replace with required prompt field",
+   "merged": "2026-05-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1087"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1084,
+   "title": "fix(cli): default installation scope to user for agent pull",
+   "merged": "2026-05-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1084"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1074,
+   "title": "docs: add AI policy, development guide, and overhaul contributing guide",
+   "merged": "2026-05-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1074"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1083,
+   "title": "fix(agent): description is registry metadata, never inject into agent files",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1083"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1080,
+   "title": "bump(release): v0.7.0",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1080"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1073,
+   "title": "chore: move SPDX identifiers for LICENSE and ee/LICENSE to REUSE.toml",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1073"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1070,
+   "title": "chore(ci): fold PR label workflows into one file",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1070"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1069,
+   "title": "fix(deps): bump gitpython to 3.1.50 and urllib3 to 2.7.0",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1069"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1068,
+   "title": "chore(ci): clean up CI pipeline",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1068"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1067,
+   "title": "feat(ci): auto-label PRs with merge conflicts",
+   "merged": "2026-05-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1067"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1022,
+   "title": "fix(traces): correct sentinel timestamp causing broken duration/started columns",
+   "merged": "2026-05-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1022"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1017,
+   "title": "fix(errors): stub page and hide from sidebar pending rework",
+   "merged": "2026-05-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1017"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1016,
+   "title": "fix(insights): replace import-based detection with INSIGHTS_AVAILABLE env flag",
+   "merged": "2026-05-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1016"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1015,
+   "title": "fix: resolve pre-commit and pre-push hook failures",
+   "merged": "2026-05-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1015"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1007,
+   "title": "fix: wire token counts and correct duration in session list",
+   "merged": "2026-05-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1007"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1005,
+   "title": "fix(hooks): replace nonexistent observal-hook.sh with session_push.py",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1005"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1004,
+   "title": "fix: stop enterprise compose file from overriding DEPLOYMENT_MODE",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1004"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1003,
+   "title": "fix: login page respects ?next= param after authentication",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1003"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1002,
+   "title": "fix: update remaining localStorage reads to sessionStorage for access token",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1002"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 1000,
+   "title": "feat(skills): realign skill model with git-first architecture",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/1000"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 999,
+   "title": "fix(security): user-level revocation, Redis fail-closed, ES256 JWT migration",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/999"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 997,
+   "title": "fix(security): enforce org ownership on component source routes",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/997"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 995,
+   "title": "fix(security): scope admin dashboard and telemetry queries to requesting user's org",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/995"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 994,
+   "title": "fix(security): private agents not visible to anonymous callers in local mode",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/994"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 993,
+   "title": "fix(security): scope private registry listings to owner org",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/993"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 990,
+   "title": "fix(security): require authentication on GraphQL telemetry endpoint",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/990"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 989,
+   "title": "fix(security): block startup with weak SECRET_KEY, warn on insecure defaults in settings",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/989"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 988,
+   "title": "fix: add unsafe-inline to CSP script-src for Next.js hydration",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/988"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 984,
+   "title": "fix(security): block password lifecycle routes in SSO-only mode (OBSV-SEC-028)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/984"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 983,
+   "title": "fix(security): require approved status for agent install, validate MCP commands (OBSV-SEC-027)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/983"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 982,
+   "title": "fix(security): hide OpenAPI docs and metrics endpoints by default (OBSV-SEC-015)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/982"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 981,
+   "title": "fix(security): enforce password strength on account creation and change (OBSV-SEC-006)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/981"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 980,
+   "title": "fix(security): rate limiting only trusts XFF from configured trusted proxies (OBSV-SEC-003)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/980"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 979,
+   "title": "fix(security): CSP middleware and access token in sessionStorage (OBSV-SEC-025)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/979"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 978,
+   "title": "fix(security): harden EC2 bootstrap script (OBSV-SEC-020)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/978"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 977,
+   "title": "fix(security): block operational paths at ALB by default (OBSV-SEC-018)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/977"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 976,
+   "title": "fix(security): block operational metadata paths in nginx (OBSV-SEC-017)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/976"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 975,
+   "title": "fix(security): centralise SSRF guard for webhooks, git clone, MCP analysis (OBSV-SEC-012/013/014)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/975"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 974,
+   "title": "fix(security): bind stateful services to loopback in Docker Compose (OBSV-SEC-016)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/974"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 973,
+   "title": "chore(security): ignore and untrack Terraform plan files (OBSV-SEC-019)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/973"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 972,
+   "title": "fix(security): include auth identity in cache key to prevent cross-user hits (OBSV-SEC-023)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/972"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 971,
+   "title": "fix(security): redact secrets from support log collector output (OBSV-SEC-022)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/971"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 969,
+   "title": "fix(security): redact secrets before sending content to LLM providers (OBSV-SEC-021)",
+   "merged": "2026-05-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/969"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 966,
+   "title": "fix(security): require auth on telemetry reconcile endpoint (OBSV-SEC-011)",
+   "merged": "2026-05-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/966"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 949,
+   "title": "fix(security): restrict support diagnostics to admin role (OBSV-SEC-008)",
+   "merged": "2026-05-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/949"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 926,
+   "title": "fix(security): apply execution time floor to every ClickHouse query (OBSV-SEC-026)",
+   "merged": "2026-05-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/926"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 925,
+   "title": "fix(security): validate session IDs before SQL interpolation (OBSV-SEC-029)",
+   "merged": "2026-05-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/925"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 818,
+   "title": "chore: add SPDX headers to all source files (REUSE 3.3 compliant)",
+   "merged": "2026-05-12",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/818"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 802,
+   "title": "perf(clickhouse): session query optimizations, eliminate FINAL scans, parallel fetches, better skip indexes",
+   "merged": "2026-05-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/802"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 816,
+   "title": "fix: replace all Apache 2.0 references with AGPL-3.0",
+   "merged": "2026-05-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/816"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 815,
+   "title": "fix(tests): update redis image assertion to 8-alpine",
+   "merged": "2026-05-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/815"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 814,
+   "title": "chore: remove DCO, CLA-assistant is the sole contributor agreement",
+   "merged": "2026-05-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/814"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 809,
+   "title": "docs: add Contributor License Agreement and update CONTRIBUTING.md",
+   "merged": "2026-05-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/809"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 764,
+   "title": "docs: overhaul README, SETUP, AGENTS and add screenshots",
+   "merged": "2026-05-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/764"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 758,
+   "title": "fix(dashboard): remove dead metrics endpoints and fix overview stats",
+   "merged": "2026-05-08",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/758"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 753,
+   "title": "refactor(migrations): squash 28 migrations into single baseline",
+   "merged": "2026-05-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/753"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 733,
+   "title": "fix(review): expand component content and read from pending version",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/733"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 732,
+   "title": "fix(api): only infer frontend URL behind TLS proxy, not local nginx",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/732"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 729,
+   "title": "fix(api): derive device auth verification URL from request headers",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/729"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 727,
+   "title": "docs: update AGENTS.md with new routes, services, and components",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/727"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 718,
+   "title": "fix(db): resolve duplicate Alembic revision 0023 causing deploy failure",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/718"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 715,
+   "title": "fix(web): layout does not scale with monitor size",
+   "merged": "2026-05-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/715"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 714,
+   "title": "docs: update e2e checklist with new feature tests (sections 20–30)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/714"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 711,
+   "title": "feat(registry): component editing with type-specific version publishing",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/711"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 699,
+   "title": "fix(api): resolve agent version approve CircularDependencyError",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/699"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 686,
+   "title": "fix(auth): stop traces after logout by revoking tokens server-side",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/686"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 682,
+   "title": "fix(api): resolve component delete 500 errors and e2e test failures",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/682"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 679,
+   "title": "fix(cli): detect and block conflicting observal package (#671)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/679"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 676,
+   "title": "fix(web): correct approved/pending status display (#670)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/676"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 674,
+   "title": "fix(api): agent deletion 500 + observal pull broken (#667)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/674"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 664,
+   "title": "feat(clickhouse): add agent_version column with bloom filter indexes (#636)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/664"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 662,
+   "title": "feat(web): review queue YAML diff view (#633)",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/662"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 661,
+   "title": "fix(docker): resolve entrypoint migration incompatibility on fresh DB",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/661"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 660,
+   "title": "feat(web): agent edit form with version release workflow",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/660"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 659,
+   "title": "feat(web): agent detail version dropdown + role-based tabs",
+   "merged": "2026-05-01",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/659"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 20898,
+   "title": "fix(changeNoteType): hide headers and warning for cloze conversions",
+   "merged": "2026-04-30",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/20898"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 658,
+   "title": "feat(cli): agent release, versions, and pull commands",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/658"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 656,
+   "title": "fix(api): complete agent versioning spec compliance",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/656"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 655,
+   "title": "feat(api): agent versioning endpoints with IDE config and YAML diff",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/655"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 654,
+   "title": "feat(api): component versioning endpoints for all 5 types",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/654"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 653,
+   "title": "feat(db): listing tables identity-only cleanup",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/653"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 652,
+   "title": "feat(services): agent config generation loop for versioned releases",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/652"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 651,
+   "title": "feat(db): add AgentVersion table and restructure Agent to identity-only",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/651"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 650,
+   "title": "feat(db): component version tables for all 5 types",
+   "merged": "2026-04-30",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/650"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 640,
+   "title": "bump(release): v0.4.0",
+   "merged": "2026-04-28",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/640"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 20868,
+   "title": "feat(card-browser): implement \"See more\" for search history",
+   "merged": "2026-04-27",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/20868"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 605,
+   "title": "fix(web): make session DAG visualization theme-aware",
+   "merged": "2026-04-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/605"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 599,
+   "title": "feat(web): add account page with theme picker and profile",
+   "merged": "2026-04-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/599"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 598,
+   "title": "fix(web): replace hardcoded colors with semantic theme tokens",
+   "merged": "2026-04-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/598"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 597,
+   "title": "feat(web): add 10 curated IDE themes",
+   "merged": "2026-04-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/597"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 596,
+   "title": "fix(web): hide enterprise-only sidebar items, fix collapsed logo",
+   "merged": "2026-04-27",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/596"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 584,
+   "title": "bump(release): v0.3.4",
+   "merged": "2026-04-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/584"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 574,
+   "title": "refactor: single-endpoint architecture — remove OTEL collector, unify telemetry routing",
+   "merged": "2026-04-25",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/574"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 568,
+   "title": "bump(release): v0.3.3",
+   "merged": "2026-04-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/568"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 567,
+   "title": "fix(ci): filter release artifact download to skip Docker metadata",
+   "merged": "2026-04-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/567"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 561,
+   "title": "fix(pypi): rename package to observal-cli to match PyPI project",
+   "merged": "2026-04-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/561"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 560,
+   "title": "fix(ci): disable provenance on per-arch Docker builds",
+   "merged": "2026-04-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/560"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 559,
+   "title": "fix(ci): native multi-arch Docker builds, drop deprecated macos-13",
+   "merged": "2026-04-24",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/559"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 553,
+   "title": "fix(cli): use SPECPATH for absolute paths in pyinstaller spec",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/553"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 552,
+   "title": "ci: use GitHub App token for release tag push",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/552"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 551,
+   "title": "bump(release): v0.3.2",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/551"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 550,
+   "title": "chore: remove volumes in rebuild-clean target",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/550"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 549,
+   "title": "fix(dashboard): deduplicate prompt/tool counts from dual ingestion",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/549"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 545,
+   "title": "fix: ensure default org at startup to prevent trace privacy 400",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/545"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 537,
+   "title": "docs: add enterprise E2E test checklist",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/537"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 536,
+   "title": "feat(otel): multi-IDE agent/skill attribution",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/536"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 532,
+   "title": "fix(ci): resolve multiple release workflow issues",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/532"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 531,
+   "title": "fix(ci): set git identity for release tag creation",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/531"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 530,
+   "title": "bump(release): v0.3.1",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/530"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 529,
+   "title": "fix(ci): inline python version check to avoid indentation error",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/529"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 528,
+   "title": "bump(release): v0.3.0",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/528"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 527,
+   "title": "fix(ci): allow PR number suffix in release commit detection",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/527"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 526,
+   "title": "Revert \"bump(release): v0.3.0\"",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/526"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 525,
+   "title": "bump(release): v0.3.0",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/525"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 524,
+   "title": "chore(pre-bump): semvar fix",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/524"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 521,
+   "title": "ci: automated release pipeline for CLI binaries, Docker images, and server packages",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/521"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 520,
+   "title": "Auth 2.0",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/520"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 519,
+   "title": "feat(auth): add SSO_ONLY mode to make SSO optional in enterprise",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/519"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 518,
+   "title": "feat: HIPAA-level audit logging + enterprise frontend pages",
+   "merged": "2026-04-23",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/518"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 513,
+   "title": "fix(rbac): downgrade settings + trace privacy from super_admin to admin",
+   "merged": "2026-04-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/513"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 510,
+   "title": "fix: remove deprecated POST /api/v1/scan endpoint",
+   "merged": "2026-04-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/510"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 507,
+   "title": "docs: document enterprise frontend architecture decisions",
+   "merged": "2026-04-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/507"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 505,
+   "title": "docs: update AGENTS.md files to reflect current codebase",
+   "merged": "2026-04-22",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/505"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 490,
+   "title": "fix(web): allow reviewer role to access /review page",
+   "merged": "2026-04-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/490"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 484,
+   "title": "feat: server-side endpoint discovery, eliminate hardcoded URLs",
+   "merged": "2026-04-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/484"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 480,
+   "title": "docs: add E2E test checklist for prod functionality",
+   "merged": "2026-04-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/480"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 478,
+   "title": "fix(cli): decouple scan from registry registration",
+   "merged": "2026-04-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/478"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 473,
+   "title": "feat: review queue detail view, smart bulk approve, and rejection visibility",
+   "merged": "2026-04-21",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/473"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 454,
+   "title": "fix(cli): scan standalone skills from ~/.claude/skills/",
+   "merged": "2026-04-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/454"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 445,
+   "title": "feat: add ASCII welcome banner on auth login",
+   "merged": "2026-04-20",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/445"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 426,
+   "title": "fix(sec): escape LIKE wildcards to prevent SQL injection (SOC 2)",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/426"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 418,
+   "title": "fix(hooks): stop-hook stdin drain prevents response/thinking capture",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/418"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 415,
+   "title": "feat: add unarchive action for archived agents",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/415"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 394,
+   "title": "feat: add delete/withdraw action in review queue",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/394"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 393,
+   "title": "feat: add draft workflow and submission forms for all component types",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/393"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 392,
+   "title": "fix(web): page reload redirect, draft persistence, and custom prompt save",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/392"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 391,
+   "title": "fix(auth): handle Redis unavailability gracefully in auth endpoints",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/391"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 382,
+   "title": "feat: org-scoped multi-tenancy (#196)",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/382"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 381,
+   "title": "feat: implement remaining PR #338 TODOs",
+   "merged": "2026-04-19",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/381"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 325,
+   "title": "feat: unify telemetry — merge hooks, shims, and OTLP",
+   "merged": "2026-04-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/325"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 323,
+   "title": "feat: live session updates via GraphQL subscriptions",
+   "merged": "2026-04-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/323"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 322,
+   "title": "docs + refactor: READMEs, eval subpackage, repo cleanup",
+   "merged": "2026-04-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/322"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 319,
+   "title": "chore: remove agentic coding artifacts from repo",
+   "merged": "2026-04-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/319"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 317,
+   "title": "feat(kiro): isolate IDE-specific hook ingestion and fix session bugs",
+   "merged": "2026-04-15",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/317"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 314,
+   "title": "feat(auth,admin): deprecate reset-code flow, add delete user",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/314"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 306,
+   "title": "fix(cli): prompt for MCP env vars during observal pull",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/306"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 299,
+   "title": "Frontend auth UX, RBAC gating, UI scaling, and eval config banner",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/299"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 297,
+   "title": "Clean up CLI, docs, and submit flow",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/297"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 289,
+   "title": "feat(cli): improve error handling, debugging, and credential security",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/289"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 288,
+   "title": "feat(clickhouse): add data retention TTL policy and configuration",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/288"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 287,
+   "title": "feat(web): add agent and model filter dropdowns to span tree",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/287"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 286,
+   "title": "feat(ee): add audit logging for SOC 2/ISO 27001 compliance",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/286"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 285,
+   "title": "feat(alerts): add evaluation engine, webhook delivery, and audit history",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/285"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 284,
+   "title": "feat: add resilience patterns for ClickHouse, Redis, and HTTP clients (#193)",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/284"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 283,
+   "title": "feat(ci): add security scanning and make lint jobs blocking",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/283"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 282,
+   "title": "feat(auth): move password reset tokens to PostgreSQL",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/282"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 281,
+   "title": "feat(cli): remove deprecated observal init command",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/281"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 280,
+   "title": "fix(web): wire actual user name into dashboard sidebar",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/280"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 279,
+   "title": "fix(docker): harden containers for production deployment",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/279"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 278,
+   "title": "feat(docker): wire enterprise env vars into Docker Compose",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/278"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 269,
+   "title": "feat: settings reconciler, thinking spans, session info tab, and buffer encryption",
+   "merged": "2026-04-14",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/269"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 266,
+   "title": "feat: enterprise PR2 — deployment guards, event bus, demo accounts, ee/ scaffold",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/266"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 265,
+   "title": "feat: enterprise deployment mode PR1 — RBAC, Alembic, require_role, frontend guards",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/265"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 260,
+   "title": "fix(db): add ownership checks, unique constraints, and transaction safety",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/260"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 259,
+   "title": "feat(cli): add local SQLite buffer for offline telemetry collection",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/259"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 258,
+   "title": "feat(security): add asymmetric key management for JWT signing (ES256)",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/258"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 257,
+   "title": "feat(auth): add JWT bearer token auth for unified browser/CLI sessions",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/257"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 256,
+   "title": "feat(security): add Content-Type validation, request ID, and JSON depth protection",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/256"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 255,
+   "title": "fix(security): parameterize all ClickHouse queries to prevent SQL injection",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/255"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 243,
+   "title": "feat(traces): add Active Sessions tab with live polling",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/243"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 242,
+   "title": "fix: ECONNREFUSED hook errors + empty span display (#236, #219)",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/242"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 235,
+   "title": "fix(server): add missing SSO auth dependencies",
+   "merged": "2026-04-13",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/235"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 161,
+   "title": "fix(frontend): preserve hook-sourced user_prompt events in dedup",
+   "merged": "2026-04-12",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/161"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 159,
+   "title": "fix(hooks): UserPromptSubmit event name override breaks session turns",
+   "merged": "2026-04-12",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/159"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 157,
+   "title": "feat(security): add secrets redactor to all trace ingestion paths",
+   "merged": "2026-04-12",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/157"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 140,
+   "title": "feat: E2E overhaul — auth, traces, admin, registry UI",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/140"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 136,
+   "title": "fix(e2e): fix demo scripts and 3 server bugs found during E2E testing",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/136"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 130,
+   "title": "feat(auth): invite codes and auto-bootstrap",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/130"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 128,
+   "title": "feat: Phase 2 — public registry frontend and agent builder",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/128"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 123,
+   "title": "docs: rewrite README for clarity and registry narrative",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/123"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 121,
+   "title": "docs: rewrite README and AGENTS.md to current state",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/121"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 120,
+   "title": "refactor: nest CLI commands into registry and self groups",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/120"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 118,
+   "title": "feat: comprehensive web UI redesign — design system, all pages, agent builder",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/118"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 117,
+   "title": "fix: overhaul web UI — skeletons, errors, breadcrumbs, toasts",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/117"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 116,
+   "title": "refactor: restructure CLI into auth, ops, admin groups",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/116"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 115,
+   "title": "fix: remove FastMCP enforcement, support all MCP frameworks",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/115"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 107,
+   "title": "docs: update AGENTS.md, README to current state, remove stale docs",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/107"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 106,
+   "title": "feat: Web UI v2",
+   "merged": "2026-04-11",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/106"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 105,
+   "title": "feat: agent CLI authoring, pull command, drop Windsurf",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/105"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 103,
+   "title": "feat: agent composition resolver and multi-component support (#80)",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/103"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 102,
+   "title": "Implement git mirroring service for components",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/102"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 101,
+   "title": "Enforce FastMCP + download tracking with bot prevention",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/101"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 100,
+   "title": "Remove tool/graphrag CLI + update docs for agent-centric pivot",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/100"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 99,
+   "title": "feat: redesign schema for agent-centric registry (#78)",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/99"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 94,
+   "title": "docs: Add product vision spec for agent registry pivot",
+   "merged": "2026-04-10",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/94"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 70,
+   "title": "Fix punctuation and formatting in README.md",
+   "merged": "2026-04-06",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/70"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 68,
+   "title": "docs: add product roadmap",
+   "merged": "2026-04-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/68"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 67,
+   "title": "fix: add standalone output to next.config for Docker build",
+   "merged": "2026-04-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/67"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 64,
+   "title": "feat: frontend quality improvements — type safety, error handling, functional time range, server-side alerts",
+   "merged": "2026-04-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/64"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 63,
+   "title": "feat: RAGAS evaluation for GraphRAG retrieval spans",
+   "merged": "2026-04-05",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/63"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 62,
+   "title": "fix: add auth guard + wire dashboard to OTel data",
+   "merged": "2026-04-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/62"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 61,
+   "title": "feat: Web dashboard, OTel Collector, Codex CLI, session conversation view",
+   "merged": "2026-04-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/61"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 60,
+   "title": "feat: registry expansion: 6 new types, real telemetry collection, config generators",
+   "merged": "2026-04-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/60"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 58,
+   "title": "Rewrite README and CONTRIBUTING for full registry scope",
+   "merged": "2026-04-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/58"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 57,
+   "title": "Deprecate old dashboard: remove observal-web entirely",
+   "merged": "2026-04-04",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/57"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 54,
+   "title": "feat(web): rewrite dashboard with Tailwind, shadcn-style UI, recharts",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/54"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 53,
+   "title": "fix: dashboard routes, web UI proxy, and install config paths",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/53"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 52,
+   "title": "chore: remove outdated docs, old test scripts, and update README",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/52"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 51,
+   "title": "docs: add AGENTS.md — internal context for contributors and AI agents",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/51"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 50,
+   "title": "chore: add Apache 2.0 license",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/50"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 49,
+   "title": "chore: add linting, pre-commit hooks, and OSS project scaffolding",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/49"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 48,
+   "title": "feat(cli): overhaul CLI with rich output, QoL options, and modular architecture",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/48"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 47,
+   "title": "feat: Eval engine, feedback dual-write, CLI commands, demo framework (Phase 8-10)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/47"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 46,
+   "title": "feat: Replace Next.js with Vite + React + urql dashboard (Phase 7)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/46"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 45,
+   "title": "feat: Strawberry GraphQL layer with DataLoaders and subscriptions (Phase 6)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/45"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 44,
+   "title": "feat: Redis + arq background worker (Phase 5)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/44"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 43,
+   "title": "feat: observal-shim (stdio) + observal-proxy (HTTP) MCP wrappers (Phase 3-4)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/43"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 42,
+   "title": "feat: ClickHouse schema + telemetry ingestion endpoint (Phase 1-2)",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/42"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 41,
+   "title": "fix: Docker compose env vars and add .dockerignore",
+   "merged": "2026-04-03",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/41"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 9,
+   "title": "Add SETUP.md and streamline README getting started",
+   "merged": "2026-04-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/9"
+  },
+  {
+   "repo": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "number": 8,
+   "title": "Update README with full documentation and migrate to uv",
+   "merged": "2026-04-02",
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry/pull/8"
+  },
+  {
+   "repo": "Haz3-jolt/Fin-OS",
+   "number": 3,
+   "title": "Time series",
+   "merged": "2026-03-18",
+   "url": "https://github.com/Haz3-jolt/Fin-OS/pull/3"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 20377,
+   "title": "Refactor NoteEditor to use changeNoteType dialog",
+   "merged": "2026-03-10",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/20377"
+  },
+  {
+   "repo": "Haz3-jolt/Fin-OS",
+   "number": 1,
+   "title": "Time series refactor",
+   "merged": "2026-03-09",
+   "url": "https://github.com/Haz3-jolt/Fin-OS/pull/1"
+  },
+  {
+   "repo": "dhanpraja231/blazeup-client-website",
+   "number": 11,
+   "title": "mobile update",
+   "merged": "2026-02-17",
+   "url": "https://github.com/dhanpraja231/blazeup-client-website/pull/11"
+  },
+  {
+   "repo": "dhanpraja231/blazeup-client-website",
+   "number": 10,
+   "title": "remove button",
+   "merged": "2026-02-17",
+   "url": "https://github.com/dhanpraja231/blazeup-client-website/pull/10"
+  },
+  {
+   "repo": "dhanpraja231/blazeup-client-website",
+   "number": 9,
+   "title": "Visual fixes",
+   "merged": "2026-02-17",
+   "url": "https://github.com/dhanpraja231/blazeup-client-website/pull/9"
+  },
+  {
+   "repo": "dhanpraja231/blazeup-client-website",
+   "number": 6,
+   "title": "lazy loading",
+   "merged": "2026-02-16",
+   "url": "https://github.com/dhanpraja231/blazeup-client-website/pull/6"
+  },
+  {
+   "repo": "dhanpraja231/blazeup-client-website",
+   "number": 5,
+   "title": "Visualizer",
+   "merged": "2026-02-16",
+   "url": "https://github.com/dhanpraja231/blazeup-client-website/pull/5"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 20225,
+   "title": "Fix previewer tabs buggy update + failure to update",
+   "merged": "2026-01-28",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/20225"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 20226,
+   "title": "fix(Browser): 'Change note type' is available if there is no selection",
+   "merged": "2026-01-26",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/20226"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18602,
+   "title": "Introduce ChangeNoteType Dialog",
+   "merged": "2026-01-19",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18602"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19988,
+   "title": "Add multi-pane layouts for foldables",
+   "merged": "2026-01-05",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19988"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18724,
+   "title": "Add Previewer to NoteEditor",
+   "merged": "2025-12-28",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18724"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19938,
+   "title": "fix(set due date dialog): set TabLayout background to transparent",
+   "merged": "2025-12-27",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19938"
+  },
+  {
+   "repo": "SammanSarkar/GSoC_archive_2025",
+   "number": 42,
+   "title": "Add proposal for AnkiDroid",
+   "merged": "2025-11-23",
+   "url": "https://github.com/SammanSarkar/GSoC_archive_2025/pull/42"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19106,
+   "title": "fix(resizable-pane): prevent parent from intercepting touch events during resizing drag",
+   "merged": "2025-08-24",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19106"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19072,
+   "title": "Introduce right click context menus",
+   "merged": "2025-08-23",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19072"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19055,
+   "title": "fix(deck-picker): hide resizing divider when collection is empty",
+   "merged": "2025-08-07",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19055"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18974,
+   "title": "Feat: Right click to select in CardBrowser",
+   "merged": "2025-08-04",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18974"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18951,
+   "title": "fix: hide save button in fragmented activity to prevent duplication",
+   "merged": "2025-08-04",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18951"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 19037,
+   "title": "NF: Rename inFragmentedActivity to inCardBrowserActivity",
+   "merged": "2025-08-03",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/19037"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18976,
+   "title": "NF: Resizable Screens",
+   "merged": "2025-07-28",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18976"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18952,
+   "title": "feat: add hover effects to divider in ResizablePaneManager",
+   "merged": "2025-07-26",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18952"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18910,
+   "title": "Move mainToolbar to NoteEditorActivity and NoteEditorFragment NF cleanup",
+   "merged": "2025-07-18",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18910"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18836,
+   "title": "Refactor NoteEditor to use a AnkiActivity instead of SingleFragmentActivity",
+   "merged": "2025-07-17",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18836"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18900,
+   "title": "Rename note_editor.xml to note_editor_fragment.xml",
+   "merged": "2025-07-16",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18900"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18823,
+   "title": "Rename NoteEditor to NoteEditorFragment",
+   "merged": "2025-07-09",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18823"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18683,
+   "title": "libanki: add notetype change methods and tests",
+   "merged": "2025-06-27",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18683"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18624,
+   "title": "Deprecate noteId var from getNoteTags in Js-API",
+   "merged": "2025-06-25",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18624"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18626,
+   "title": "Make cardBrowser Resizable and refactor shared pref of resizable screens into seperate shared pref",
+   "merged": "2025-06-24",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18626"
+  },
+  {
+   "repo": "hospitaljobsin/hospitaljobsin",
+   "number": 248,
+   "title": "change namespace",
+   "merged": "2025-06-20",
+   "url": "https://github.com/hospitaljobsin/hospitaljobsin/pull/248"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18561,
+   "title": "Refactoring Card editor [Deprecate editorTitle, wrap in CardView, show focus]",
+   "merged": "2025-06-19",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18561"
+  },
+  {
+   "repo": "hospitaljobsin/hospitaljobsin",
+   "number": 238,
+   "title": "Initial Mobile Cross Platform Template",
+   "merged": "2025-06-19",
+   "url": "https://github.com/hospitaljobsin/hospitaljobsin/pull/238"
+  },
+  {
+   "repo": "hospitaljobsin/hospitaljobsin",
+   "number": 229,
+   "title": "Filtering",
+   "merged": "2025-06-16",
+   "url": "https://github.com/hospitaljobsin/hospitaljobsin/pull/229"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18509,
+   "title": "Refactor DeckPicker resizable implementation, and make CardTemplateEditor resizable",
+   "merged": "2025-06-14",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18509"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18410,
+   "title": "Introduces the ResizablePaneManager Utility class to handle all resizable screens and make DeckPicker resizable",
+   "merged": "2025-06-04",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18410"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 18200,
+   "title": "Refactor $PRE_RELEASE to $RELEASE_TYPE & fix SC2088",
+   "merged": "2025-04-05",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/18200"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17795,
+   "title": "JS function to setTags and getTags",
+   "merged": "2025-02-27",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17795"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17680,
+   "title": "Unit Tests for initializeApkgExportUi and initializeNotesExportUi",
+   "merged": "2025-01-03",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17680"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17655,
+   "title": "Minor fixup for release-description.md",
+   "merged": "2024-12-24",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17655"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17626,
+   "title": "feat(export): support non-legacy exports [apkg/colpkg]",
+   "merged": "2024-12-19",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17626"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17629,
+   "title": "Hotfix for release.sh & stricter pathing",
+   "merged": "2024-12-18",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17629"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 17616,
+   "title": "Changed Release order and description of releases page",
+   "merged": "2024-12-18",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/17616"
+  },
+  {
+   "repo": "Primer-Labs/puthulir",
+   "number": 2,
+   "title": "revas",
+   "merged": "2024-11-28",
+   "url": "https://github.com/Primer-Labs/puthulir/pull/2"
+  },
+  {
+   "repo": "Primer-Labs/puthulir",
+   "number": 1,
+   "title": "Added new pdfs",
+   "merged": "2024-11-06",
+   "url": "https://github.com/Primer-Labs/puthulir/pull/1"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16472,
+   "title": "Created JS API function to add a specific tag",
+   "merged": "2024-05-25",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16472"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16391,
+   "title": "Added Unit test for Reviewer.kt.",
+   "merged": "2024-05-21",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16391"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16398,
+   "title": "fix: IO type reappears when card is added",
+   "merged": "2024-05-14",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16398"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16392,
+   "title": "Added test for OnDeckSelected.",
+   "merged": "2024-05-14",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16392"
+  },
+  {
+   "repo": "College-of-Engineering-Guindy-AU/java-script-based-design-Haz3-jolt",
+   "number": 1,
+   "title": "Finished assignment",
+   "merged": "2024-05-04",
+   "url": "https://github.com/College-of-Engineering-Guindy-AU/java-script-based-design-Haz3-jolt/pull/1"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16307,
+   "title": "Created test for onSelectedTags.",
+   "merged": "2024-05-02",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16307"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 16188,
+   "title": "Created Unit Test for fun refreshIfRequired",
+   "merged": "2024-04-18",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/16188"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 15845,
+   "title": "Added \"copy url\" to openUrl snackbar",
+   "merged": "2024-03-10",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/15845"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 15749,
+   "title": "Added FSRS info to getDebugInfo",
+   "merged": "2024-03-03",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/15749"
+  },
+  {
+   "repo": "ankidroid/Anki-Android",
+   "number": 15720,
+   "title": "My feature branch",
+   "merged": "2024-02-29",
+   "url": "https://github.com/ankidroid/Anki-Android/pull/15720"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 24,
+   "title": "essential",
+   "merged": "2023-12-09",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/24"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 20,
+   "title": "Daily",
+   "merged": "2023-11-26",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/20"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 23,
+   "title": "Dytt",
+   "merged": "2023-11-24",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/23"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 22,
+   "title": "Dytt",
+   "merged": "2023-11-23",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/22"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 21,
+   "title": "Delete gitignore_format.txt",
+   "merged": "2023-11-17",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/21"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 20,
+   "title": "Sdthh",
+   "merged": "2023-11-16",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/20"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 19,
+   "title": "Sdthh",
+   "merged": "2023-11-15",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/19"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 18,
+   "title": "Asdfikhg",
+   "merged": "2023-11-14",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/18"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 17,
+   "title": "Update connectRankDB.py",
+   "merged": "2023-11-12",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/17"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 18,
+   "title": "Cleaning some comments for github dailies",
+   "merged": "2023-11-08",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/18"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 17,
+   "title": "Daily",
+   "merged": "2023-11-08",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/17"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 16,
+   "title": "Update connectRankDB.py",
+   "merged": "2023-11-06",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/16"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 14,
+   "title": "Jyrd",
+   "merged": "2023-11-05",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/14"
+  },
+  {
+   "repo": "Haz3-jolt/Finger-tracking-gestures",
+   "number": 1,
+   "title": "Update Fingerlock.py",
+   "merged": "2023-11-04",
+   "url": "https://github.com/Haz3-jolt/Finger-tracking-gestures/pull/1"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 16,
+   "title": "Update README.md",
+   "merged": "2023-11-03",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/16"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 15,
+   "title": "Readmes",
+   "merged": "2023-11-01",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/15"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 14,
+   "title": "fixes",
+   "merged": "2023-11-01",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/14"
+  },
+  {
+   "repo": "DASA-boys/DASA-Bot",
+   "number": 13,
+   "title": "Readmes",
+   "merged": "2023-11-01",
+   "url": "https://github.com/DASA-boys/DASA-Bot/pull/13"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 11,
+   "title": "Update README.md",
+   "merged": "2023-11-01",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/11"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 10,
+   "title": "Update README.md",
+   "merged": "2023-10-31",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/10"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 9,
+   "title": "Update README.md",
+   "merged": "2023-10-31",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/9"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 8,
+   "title": "Added code examples and cleaned temp files",
+   "merged": "2023-10-28",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/8"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 7,
+   "title": "Update dasa.py",
+   "merged": "2023-10-24",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/7"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 3,
+   "title": "Update connectRankDB.py",
+   "merged": "2023-10-13",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/3"
+  },
+  {
+   "repo": "Haz3-jolt/DasaBot",
+   "number": 2,
+   "title": "Update README.md",
+   "merged": "2023-10-13",
+   "url": "https://github.com/Haz3-jolt/DasaBot/pull/2"
+  }
+ ],
+ "own": [
+  {
+   "name": "Haz3-jolt/dotfiles",
+   "description": "Hari's opinionated dotfiles setup via chezmoi. Supports Debian, Ubuntu, Arch and MacOS distros.",
+   "language": "Shell",
+   "stars": 4,
+   "pushed": "2026-10-18",
+   "url": "https://github.com/Haz3-jolt/dotfiles"
+  },
+  {
+   "name": "Haz3-jolt/ultra-pi",
+   "description": null,
+   "language": "JavaScript",
+   "stars": 0,
+   "pushed": "2026-10-18",
+   "url": "https://github.com/Haz3-jolt/ultra-pi"
+  },
+  {
+   "name": "Haz3-jolt/observal-release-sandbox",
+   "description": "Disposable Observal release branch validation. Synthetic data only; no production publishing or deployments.",
+   "language": "Python",
+   "stars": 0,
+   "pushed": "2026-10-03",
+   "url": "https://github.com/Haz3-jolt/observal-release-sandbox"
+  },
+  {
+   "name": "Haz3-jolt/Notes",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2026-08-28",
+   "url": "https://github.com/Haz3-jolt/Notes"
+  },
+  {
+   "name": "Haz3-jolt/portfolio-site",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2026-07-25",
+   "url": "https://github.com/Haz3-jolt/portfolio-site"
+  },
+  {
+   "name": "Haz3-jolt/tappy",
+   "description": null,
+   "language": "Kotlin",
+   "stars": 18,
+   "pushed": "2026-07-11",
+   "url": "https://github.com/Haz3-jolt/tappy"
+  },
+  {
+   "name": "Haz3-jolt/tappy-web",
+   "description": null,
+   "language": "TypeScript",
+   "stars": 0,
+   "pushed": "2026-07-05",
+   "url": "https://github.com/Haz3-jolt/tappy-web"
+  },
+  {
+   "name": "Haz3-jolt/demo-repo",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2026-06-06",
+   "url": "https://github.com/Haz3-jolt/demo-repo"
+  },
+  {
+   "name": "Haz3-jolt/workshop-collab",
+   "description": null,
+   "language": "JavaScript",
+   "stars": 1,
+   "pushed": "2026-05-30",
+   "url": "https://github.com/Haz3-jolt/workshop-collab"
+  },
+  {
+   "name": "Haz3-jolt/git-workshop",
+   "description": null,
+   "language": "HTML",
+   "stars": 0,
+   "pushed": "2026-05-30",
+   "url": "https://github.com/Haz3-jolt/git-workshop"
+  },
+  {
+   "name": "Haz3-jolt/authKey",
+   "description": null,
+   "language": "C",
+   "stars": 0,
+   "pushed": "2026-03-31",
+   "url": "https://github.com/Haz3-jolt/authKey"
+  },
+  {
+   "name": "Haz3-jolt/Fin-OS",
+   "description": null,
+   "language": "Go",
+   "stars": 0,
+   "pushed": "2026-03-27",
+   "url": "https://github.com/Haz3-jolt/Fin-OS"
+  },
+  {
+   "name": "Haz3-jolt/CEG",
+   "description": null,
+   "language": "TypeScript",
+   "stars": 0,
+   "pushed": "2026-02-19",
+   "url": "https://github.com/Haz3-jolt/CEG"
+  },
+  {
+   "name": "Haz3-jolt/Bucks",
+   "description": "Bucks",
+   "language": null,
+   "stars": 0,
+   "pushed": "2026-02-13",
+   "url": "https://github.com/Haz3-jolt/Bucks"
+  },
+  {
+   "name": "Haz3-jolt/NLP-Lab",
+   "description": null,
+   "language": "Python",
+   "stars": 0,
+   "pushed": "2026-02-03",
+   "url": "https://github.com/Haz3-jolt/NLP-Lab"
+  },
+  {
+   "name": "Haz3-jolt/AnkiDroid-GSoC-Report",
+   "description": null,
+   "language": null,
+   "stars": 3,
+   "pushed": "2025-09-08",
+   "url": "https://github.com/Haz3-jolt/AnkiDroid-GSoC-Report"
+  },
+  {
+   "name": "Haz3-jolt/SimpliRead",
+   "description": null,
+   "language": "Kotlin",
+   "stars": 0,
+   "pushed": "2025-08-30",
+   "url": "https://github.com/Haz3-jolt/SimpliRead"
+  },
+  {
+   "name": "Haz3-jolt/hospitaljobsin",
+   "description": "recruitment and job seeking for medical professionals",
+   "language": "TypeScript",
+   "stars": 0,
+   "pushed": "2025-06-20",
+   "url": "https://github.com/Haz3-jolt/hospitaljobsin"
+  },
+  {
+   "name": "Haz3-jolt/DS-Miniproject-sem3",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2024-11-13",
+   "url": "https://github.com/Haz3-jolt/DS-Miniproject-sem3"
+  },
+  {
+   "name": "Haz3-jolt/Strawberry-FastAPI-Postgres-Templating",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2024-11-07",
+   "url": "https://github.com/Haz3-jolt/Strawberry-FastAPI-Postgres-Templating"
+  },
+  {
+   "name": "Haz3-jolt/Pycon-FastAPI-Workhop",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2024-09-20",
+   "url": "https://github.com/Haz3-jolt/Pycon-FastAPI-Workhop"
+  },
+  {
+   "name": "Haz3-jolt/Pycon-Algo-Workshop",
+   "description": null,
+   "language": "Jupyter Notebook",
+   "stars": 0,
+   "pushed": "2024-09-20",
+   "url": "https://github.com/Haz3-jolt/Pycon-Algo-Workshop"
+  },
+  {
+   "name": "Haz3-jolt/SDB_Mini",
+   "description": null,
+   "language": null,
+   "stars": 0,
+   "pushed": "2024-09-06",
+   "url": "https://github.com/Haz3-jolt/SDB_Mini"
+  },
+  {
+   "name": "Haz3-jolt/DasaBot",
+   "description": "A Discord bot designed to provide information about cutoffs, college lists, and closest airports.",
+   "language": "Python",
+   "stars": 6,
+   "pushed": "2024-05-05",
+   "url": "https://github.com/Haz3-jolt/DasaBot"
+  },
+  {
+   "name": "Haz3-jolt/Finger-tracking-gestures",
+   "description": "A python program which uses OpenCV to track the fingers of a person, and then executes commands if it detects a relevant ",
+   "language": "Python",
+   "stars": 8,
+   "pushed": "2024-05-05",
+   "url": "https://github.com/Haz3-jolt/Finger-tracking-gestures"
+  },
+  {
+   "name": "Haz3-jolt/Path-travelling-and-parking-arduino-bot",
+   "description": "A Arduino bot which follows a specified track and parks once it crosses a boundary",
+   "language": "C",
+   "stars": 6,
+   "pushed": "2022-10-25",
+   "url": "https://github.com/Haz3-jolt/Path-travelling-and-parking-arduino-bot"
+  }
+ ],
+ "contributed": [
+  {
+   "name": "AgenticResourceRegistry/AgenticResourceRegistry",
+   "description": "Share and discover coding agent resources across your team. Self-hosted, Apache 2.0, works with Claude Code, Kiro, Cursor, Codex, Pi and more.",
+   "language": "Python",
+   "stars": 4294,
+   "url": "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry",
+   "prs": 421
+  },
+  {
+   "name": "ankidroid/Anki-Android",
+   "description": "AnkiDroid: Anki flashcards on Android. Your secret trick to achieve superhuman information retention.",
+   "language": "Kotlin",
+   "stars": 12202,
+   "url": "https://github.com/ankidroid/Anki-Android",
+   "prs": 44
+  },
+  {
+   "name": "Observal/Axl",
+   "description": null,
+   "language": "TypeScript",
+   "stars": 1040,
+   "url": "https://github.com/Observal/Axl",
+   "prs": 9
+  },
+  {
+   "name": "DASA-boys/DASA-Bot",
+   "description": "A discord bot made for the DASA server. ",
+   "language": "Python",
+   "stars": 3,
+   "url": "https://github.com/DASA-boys/DASA-Bot",
+   "prs": 7
+  },
+  {
+   "name": "dhanpraja231/blazeup-client-website",
+   "description": null,
+   "language": "CSS",
+   "stars": 0,
+   "url": "https://github.com/dhanpraja231/blazeup-client-website",
+   "prs": 5
+  },
+  {
+   "name": "hospitaljobsin/hospitaljobsin",
+   "description": "Empowering Hospitals to Hire & Healthcare Professionals to Grow",
+   "language": "Python",
+   "stars": 1,
+   "url": "https://github.com/hospitaljobsin/hospitaljobsin",
+   "prs": 3
+  },
+  {
+   "name": "aryaniyaps/sdp-2026",
+   "description": null,
+   "language": "HTML",
+   "stars": 0,
+   "url": "https://github.com/aryaniyaps/sdp-2026",
+   "prs": 3
+  },
+  {
+   "name": "Primer-Labs/puthulir",
+   "description": "AUSEC Online Quiz Hosting Application (Puthulir)",
+   "language": "TypeScript",
+   "stars": 2,
+   "url": "https://github.com/Primer-Labs/puthulir",
+   "prs": 2
+  },
+  {
+   "name": "SammanSarkar/GSoC_archive_2025",
+   "description": "Accepted GSoC 2025 proposals archive for reference and inspiration from the community.  ",
+   "language": null,
+   "stars": 1048,
+   "url": "https://github.com/SammanSarkar/GSoC_archive_2025",
+   "prs": 1
+  },
+  {
+   "name": "College-of-Engineering-Guindy-AU/java-script-based-design-Haz3-jolt",
+   "description": "java-script-based-design-Haz3-jolt created by GitHub Classroom",
+   "language": "JavaScript",
+   "stars": 0,
+   "url": "https://github.com/College-of-Engineering-Guindy-AU/java-script-based-design-Haz3-jolt",
+   "prs": 1
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+---
+import Icon from "./Icon.astro";
+---
+<button class="theme" type="button" aria-label="Switch colour theme">
+  <span data-when="light"><Icon name="moon" size={20} /></span>
+  <span data-when="dark"><Icon name="sun" size={20} /></span>
+</button>
+<style>
+  .theme { display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: none; color: var(--ink-2); cursor: pointer; transition: color 160ms var(--ease), background-color 160ms var(--ease); }
+  .theme:hover { color: var(--accent); background: var(--accent-soft); }
+  .theme span { display: none; }
+  :global(:root[data-theme="light"]) .theme [data-when="light"], :global(:root[data-theme="dark"]) .theme [data-when="dark"] { display: block; }
+</style>
+<script>
+  document.querySelector(".theme")?.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch {}
+    document.dispatchEvent(new Event("themechange"));
+  });
+</script>

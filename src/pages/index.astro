@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import Chapter from "../components/Chapter.astro";
+import Contact from "../components/Contact.astro";
+import Ledger from "../components/Ledger.astro";
+import Games from "../components/Games.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import { chapters } from "../data/story";
+import data from "../data/github.json";
+
+const since = 2021;
+const merged = data.prs.filter((p: any) => !/sandbox|demo-repo/i.test(p.repo)).length;
+const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+---
+<Base title="Hari Srinivasan" description="Multidisciplinary dev who just loves building. Maintainer of Agentic Resource Registry.">
+  <header class="top wrap">
+    <a href="#" class="name">Hari Srinivasan</a>
+    <ThemeToggle />
+  </header>
+
+  <main>
+    <section class="intro wrap" aria-labelledby="intro-title">
+      <h1 id="intro-title">Multidisciplinary dev who just loves building.</h1>
+      <p class="lede">
+        I'm Hari. I maintain
+        <a href="https://github.com/AgenticResourceRegistry/AgenticResourceRegistry" target="_blank" rel="noopener">Agentic Resource Registry</a>,
+        I co-wrote <a href="https://github.com/Observal/Axl" target="_blank" rel="noopener">Axl</a>, and I spent a year of Google Summer of Code and after on
+        <a href="https://github.com/ankidroid/Anki-Android" target="_blank" rel="noopener">AnkiDroid</a>.
+        It started with games when I was twelve. Here's the bench, one thing at a time.
+      </p>
+      <p class="stats">{merged} merged PRs · {data.stats.reposContributed} repos contributed to · open source since {since}</p>
+      <Contact size="lg" />
+    </section>
+
+    <div class="story wrap">
+      {chapters.map((c, i) => <Chapter chapter={c} index={i} />)}
+    </div>
+
+    <Ledger />
+  </main>
+
+  <Games />
+
+  <footer class="end wrap">
+    <div>
+      <h2>Say hello</h2>
+      <p>Building something, or want me on it? I read everything.</p>
+    </div>
+    <Contact size="lg" />
+    <p class="small">PR data from GitHub, updated {built}. This site is open source.</p>
+  </footer>
+</Base>
+
+<script>
+  import "../lib/runtime";
+</script>
+
+<style>
+  .top { display: flex; align-items: center; justify-content: space-between; padding-block: var(--space-4); }
+  .name { font-weight: 600; text-decoration: none; }
+  .intro { padding-block: var(--space-7) var(--space-6); }
+  h1 { font-size: var(--step-3); max-width: 14ch; margin-bottom: var(--space-5); }
+  .lede { font-size: var(--step-1); color: var(--ink-2); max-width: 38rem; line-height: 1.5; }
+  .lede a { color: var(--ink); }
+  .lede a:hover { color: var(--accent); }
+  .stats { margin-top: var(--space-5); margin-bottom: var(--space-4); font-size: var(--step--1); color: var(--ink-3); }
+  .end { display: grid; gap: var(--space-4); padding-block: var(--space-8) var(--space-6); border-top: 1px solid var(--rule); }
+  .end h2 { font-size: var(--step-3); margin-bottom: var(--space-2); }
+  .end p { color: var(--ink-2); }
+  .small { font-size: var(--step--1); color: var(--ink-3) !important; margin-top: var(--space-6); }
+</style>
