@@ -64,8 +64,8 @@ export function startAsciiField() {
     u0.set(u); v0.set(v);
     diffuse(1, u, u0, 0.02); diffuse(2, v, v0, 0.02); project();
     u0.set(u); v0.set(v);
-    advect(1, u, u0, u0, v0, dt * 10); advect(2, v, v0, u0, v0, dt * 10); project();
-    d0.set(d); advect(0, d, d0, u, v, dt * 10);
+    advect(1, u, u0, u0, v0, dt * 3.5); advect(2, v, v0, u0, v0, dt * 3.5); project();
+    d0.set(d); advect(0, d, d0, u, v, dt * 3.5);
     const kv = Math.exp(-0.25 * dt), kd = Math.exp(-0.32 * dt);
     for (let i = 0; i < N; i++) { u[i] *= kv; v[i] *= kv; d[i] *= kd; }
   };
@@ -82,7 +82,7 @@ export function startAsciiField() {
 
   const readTheme = () => {
     ink = getComputedStyle(document.documentElement).getPropertyValue("--grain-ink").trim() || ink;
-    alpha = (document.documentElement.dataset.theme === "light" ? 0.75 : 0.62) * (innerWidth < 700 ? 0.8 : 1); // a touch fainter on phones
+    alpha = (document.documentElement.dataset.theme === "light" ? 0.36 : 0.28) * (innerWidth < 700 ? 0.8 : 1); // quiet: it should sit behind the page, not compete with it
   };
   const resize = () => {
     canvas.width = Math.ceil(innerWidth / CELL) * CELL;
@@ -97,8 +97,8 @@ export function startAsciiField() {
   const feed = (dt: number) => {
     time += dt;
     for (const e of emitters) {
-      const x = 1 + W * (0.5 + 0.45 * Math.sin(time * e.ax * 6 + e.ph)), y = 1 + H * (0.5 + 0.42 * Math.sin(time * e.ay * 6 + e.ph * 1.7));
-      const dx = Math.cos(time * 0.4 + e.ph) * 26, dy = Math.sin(time * 0.33 + e.ph) * 26;
+      const x = 1 + W * (0.5 + 0.45 * Math.sin(time * e.ax * 2 + e.ph)), y = 1 + H * (0.5 + 0.42 * Math.sin(time * e.ay * 2 + e.ph * 1.7));
+      const dx = Math.cos(time * 0.15 + e.ph) * 10, dy = Math.sin(time * 0.12 + e.ph) * 10;
       splat(x, y, dx * dt, dy * dt, 2.6 * dt, Math.max(4, W * 0.11));
     }
   };
@@ -134,7 +134,7 @@ export function startAsciiField() {
     if (dirty || now - clearAt > 400) { buildClear(); clearAt = now; }
     const out = new Uint8Array(cols * rows);
     const n = GLYPHS.length - 1;
-    const tt = time * 0.5;
+    const tt = time * 0.12;
     for (let r = 0; r < rows; r++) {
       const fy = (r + 0.5) / 3 + 0.5;
       for (let c = 0; c < cols; c++) {
@@ -144,7 +144,7 @@ export function startAsciiField() {
         if (dens < 0.03) continue;
         const tex = 0.4 + 0.6 * Math.pow(noise(c * 0.09 + tt, r * 0.09 - tt * 0.7), 1.6);
         let l = Math.min(1, dens) * tex;
-        l = Math.min(1, Math.max(0, (l - 0.12) * 1.5));
+        l = Math.min(1, Math.max(0, (l - 0.32) * 1.5)); // only the thickest smoke shows
         l *= 1 - Math.min(1, clear[r * cols + c] * 1.15);
         out[r * cols + c] = Math.min(n, Math.floor(Math.sqrt(l) * (n + 0.6)));
       }
@@ -171,13 +171,13 @@ export function startAsciiField() {
     if (px >= 0) {
       const dt = Math.max(0.008, (now - pt) / 1000);
       const vx = Math.max(-40, Math.min(40, (fx - px) / dt)), vy = Math.max(-40, Math.min(40, (fy - py) / dt));
-      splat(fx, fy, vx * 0.06, vy * 0.06, 0.12, 3.2);
+      splat(fx, fy, vx * 0.025, vy * 0.025, 0.06, 2.6);
     }
     px = fx; py = fy; pt = now;
   }, { passive: true });
   addEventListener("pointerdown", (e) => {
     const fx = e.clientX / CELL / 3 + 0.5, fy = e.clientY / CELL / 3 + 0.5;
-    for (let a = 0; a < 8; a++) splat(fx + Math.cos(a) * 2, fy + Math.sin(a) * 2, Math.cos(a) * 3, Math.sin(a) * 3, 0.35, 3);
+    for (let a = 0; a < 8; a++) splat(fx + Math.cos(a) * 2, fy + Math.sin(a) * 2, Math.cos(a) * 1.2, Math.sin(a) * 1.2, 0.18, 2.6);
   }, { passive: true });
 
   readTheme();
