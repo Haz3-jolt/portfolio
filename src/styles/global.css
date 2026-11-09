@@ -137,3 +137,16 @@ body > header, body > main, body > footer { position: relative; }
 .arr-tag b::after { content: " ↗"; color: var(--accent); }
 .arr-tag span { opacity: 0.65; font-size: 0.85em; }
 .arr-tag:hover { color: var(--paper); }
+
+/* Highlights: the same look as selected text (accent block, paper ink), for the names that matter. */
+mark, .hl {
+  background: var(--accent);
+  color: var(--paper);
+  padding: 0 0.18em;
+  margin: 0 -0.02em;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+a.hl { text-decoration: none; transition: background-color 160ms var(--ease), color 160ms var(--ease); }
+a.hl:hover { background: var(--ink); color: var(--paper); }

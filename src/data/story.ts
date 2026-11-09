@@ -43,8 +43,8 @@ export const chapters: Chapter[] = [
     year: "2023",
     title: "DASA-Bot",
     body: [
-      "The first thing I built that real people used. A Discord bot for students applying to Indian colleges through DASA: ask /cutoff or /analyze with your rank and it answers from years of cutoff data, even if you call NIT Trichy \"nitt\".",
-      "We were scrappy about it. The database was a Google Sheet. The college nicknames were a hand-typed dictionary. It held up anyway: more than 1,000 people used it during admissions season.",
+      "**The first thing I built that real people used.** A Discord bot for students applying to Indian colleges through DASA: ask /cutoff or /analyze with your rank and it answers from years of cutoff data, even if you call NIT Trichy \"nitt\".",
+      "We were scrappy about it. The database was a Google Sheet. The college nicknames were a hand-typed dictionary. It held up anyway: **more than 1,000 people** used it during admissions season.",
     ],
     facts: ["1,000+ users", "Top contributor"],
     links: [{ label: "DASA-Bot on GitHub", href: gh("DASA-boys/DASA-Bot") }],
@@ -55,8 +55,8 @@ export const chapters: Chapter[] = [
     year: "2023–26",
     title: "AnkiDroid",
     body: [
-      "Late 2023 I started reading the AnkiDroid codebase, the open source Anki flashcard app for Android with 10M+ downloads on Google Play. Small fixes and tests first, then export support, then bigger things. 44 merged PRs so far.",
-      "In 2025 I got into Google Summer of Code with AnkiDroid to rebuild its UI for tablets and Chromebooks: resizable multi-pane layouts, an editor with the previewer beside it, right-click menus and mouse support.",
+      "Late 2023 I started reading the AnkiDroid codebase, the open source Anki flashcard app for Android with **10M+ downloads on Google Play**. Small fixes and tests first, then export support, then bigger things. 44 merged PRs so far.",
+      "In 2025 I got into **Google Summer of Code** with AnkiDroid to rebuild its UI for tablets and Chromebooks: resizable multi-pane layouts, an editor with the previewer beside it, right-click menus and mouse support.",
     ],
     facts: ["10M+ downloads", "GSoC 2025", "44 merged PRs"],
     links: [
@@ -73,7 +73,7 @@ export const chapters: Chapter[] = [
     title: "Change Note Type",
     body: [
       "On 19 January 2025 I asked if issue #14134 was free to pick up and wrote \"I might take at least a week on this.\" It let you move notes to a different note type, mapping every old field and card onto the new one.",
-      "It merged on 19 January 2026, exactly one year later: 2,488 lines across 32 files, through 38 reviews.",
+      "It merged on 19 January 2026, **exactly one year later**: 2,488 lines across 32 files, through 38 reviews.",
     ],
     facts: ["+2,488 lines", "38 reviews", "1 year to the day"],
     links: [
@@ -87,7 +87,7 @@ export const chapters: Chapter[] = [
     year: "2026",
     title: "Agentic Resource Registry",
     body: [
-      "Now I maintain Agentic Resource Registry: a self-hosted, Apache 2.0 registry where teams share the skills, MCP servers, hooks, prompts and agent files their coding agents use, and see which ones actually help.",
+      "Now I **maintain Agentic Resource Registry**: a self-hosted, Apache 2.0 registry where teams share the skills, MCP servers, hooks, prompts and agent files their coding agents use, and see which ones actually help.",
       "I'm its top contributor and I cut the releases. Since April 2026 that's 421 merged PRs and 1,262 commits.",
     ],
     facts: ["Maintainer", "421 merged PRs", "4,300+ stars"],
@@ -103,7 +103,7 @@ export const chapters: Chapter[] = [
     id: "axl",
     year: "2026",
     title: "Axl",
-    body: ["A local-first agent harness I co-wrote. One daemon owns your coding session, and every client, terminal or browser, is a window into the same session. Close one and the work keeps going."],
+    body: ["A local-first agent harness I **co-wrote**. One daemon owns your coding session, and every client, terminal or browser, is a window into the same session. Close one and the work keeps going."],
     facts: ["Top contributor", "1,000+ stars"],
     links: [{ label: "Axl on GitHub", href: gh("Observal/Axl") }],
     figure: "engine",
