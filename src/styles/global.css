@@ -147,6 +147,8 @@ mark, .hl {
   border-radius: 2px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  white-space: nowrap; /* a highlighted name never splits across lines */
 }
+mark.long { white-space: normal; } /* except whole sentences, which may wrap */
 a.hl { text-decoration: none; transition: background-color 160ms var(--ease), color 160ms var(--ease); }
 a.hl:hover { background: var(--ink); color: var(--paper); }

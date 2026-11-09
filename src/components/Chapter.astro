@@ -8,7 +8,8 @@ interface Props { chapter: Chapter; index: number }
 const { chapter: c, index } = Astro.props;
 const flip = index % 2 === 1;
 // **text** in a paragraph renders as a highlight.
-const parts = (p: string) => p.split(/\*\*(.+?)\*\*/g).map((t, i) => ({ t, hl: i % 2 === 1 }));
+// Hyphenated words (right-click, co-wrote) use a non-breaking hyphen so they never split at the line end.
+const parts = (p: string) => p.replace(/(\w)-(\w)/g, "$1\u2011$2").split(/\*\*(.+?)\*\*/g).map((t, i) => ({ t, hl: i % 2 === 1 }));
 ---
 <section class="chapter" id={c.id} data-chapter data-weight={c.weight ?? "normal"} data-flip={flip ? "" : undefined} aria-labelledby={`${c.id}-title`}>
   <div class="text">
@@ -17,7 +18,7 @@ const parts = (p: string) => p.split(/\*\*(.+?)\*\*/g).map((t, i) => ({ t, hl: i
       {c.logo && <img class="logo" src={c.logo.src} alt="" width={c.logo.width} height={c.logo.height} />}
       {c.title}
     </h2>
-    {c.body.map((p) => <p class="body">{parts(p).map((x) => (x.hl ? <mark>{x.t}</mark> : x.t))}</p>)}
+    {c.body.map((p) => <p class="body">{parts(p).map((x) => (x.hl ? <mark class={x.t.split(" ").length > 6 ? "long" : undefined}>{x.t}</mark> : x.t))}</p>)}
     {c.facts && <ul class="facts">{c.facts.map((x) => <li>{x}</li>)}</ul>}
     {c.links && (
       <ul class="links">

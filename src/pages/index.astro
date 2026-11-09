@@ -8,8 +8,6 @@ import ThemeToggle from "../components/ThemeToggle.astro";
 import { chapters } from "../data/story";
 import data from "../data/github.json";
 
-const since = 2021;
-const merged = data.prs.filter((p: any) => !/sandbox|demo-repo/i.test(p.repo)).length;
 const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 ---
 <Base title="Hari Srinivasan" description="Multidisciplinary dev who just loves building. Maintainer of Agentic Resource Registry.">
@@ -24,11 +22,10 @@ const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric
       <p class="lede">
         I'm Hari. I maintain
         <a class="hl" href="https://github.com/AgenticResourceRegistry/AgenticResourceRegistry" target="_blank" rel="noopener">Agentic Resource Registry</a>,
-        I co-wrote <a class="hl" href="https://github.com/Observal/Axl" target="_blank" rel="noopener">Axl</a>, and I spent a year of <mark>Google Summer of Code</mark> and after on
+        I co‑wrote <a class="hl" href="https://github.com/Observal/Axl" target="_blank" rel="noopener">Axl</a>, and I spent a year of <mark>Google Summer of Code</mark> and after on
         <a class="hl" href="https://github.com/ankidroid/Anki-Android" target="_blank" rel="noopener">AnkiDroid</a>.
         It started with games when I was twelve. Here's the bench, one thing at a time.
       </p>
-      <ul class="stats"><li>{merged} merged PRs</li><li>{data.stats.reposContributed} repos contributed to</li><li>open source since {since}</li></ul>
       <Contact size="lg" />
     </section>
 
@@ -60,11 +57,10 @@ const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric
   .name { font-weight: 600; text-decoration: none; }
   .intro { padding-block: var(--space-7) var(--space-6); }
   h1 { font-size: var(--step-3); max-width: 14ch; margin-bottom: var(--space-5); }
-  .lede { font-size: var(--step-1); color: var(--ink-2); max-width: 38rem; line-height: 1.5; }
+  .lede { font-size: var(--step-1); color: var(--ink-2); max-width: 38rem; line-height: 1.6; text-wrap: pretty; margin-bottom: var(--space-5); }
   .lede a { color: var(--ink); }
   .lede a:hover { color: var(--accent); }
   .lede a.hl, .lede a.hl:hover { color: var(--paper); }
-  .stats { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-5); list-style: none; padding: 0; margin: var(--space-5) 0 var(--space-4); font-size: var(--step--1); color: var(--ink-3); }
   .end { display: grid; gap: var(--space-4); padding-block: var(--space-8) var(--space-6); border-top: 1px solid var(--rule); }
   .end h2 { font-size: var(--step-3); margin-bottom: var(--space-2); }
   .end p { color: var(--ink-2); }
