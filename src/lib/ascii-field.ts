@@ -3,7 +3,7 @@
 // texture gives each cell a brightness, which picks a tiny glyph. The fluid runs on a coarse grid
 // and is sampled per glyph cell; one canvas, ~30 fps, paused when the tab is hidden, still under
 // prefers-reduced-motion.
-const GLYPHS = [" ", "·", "-", "+", "o", "○"]; // sparse → dense
+const GLYPHS = [" ", ".", "-", "+", "o", "O"]; // sparse to dense
 const CELL = 7; // glyph pitch in CSS px: a fine mesh
 
 export function startAsciiField() {

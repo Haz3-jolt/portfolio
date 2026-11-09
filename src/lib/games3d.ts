@@ -51,7 +51,7 @@ function benchHop(ctx: Ctx): Game {
     shadow.rotation.x = -Math.PI / 2; root.add(shadow);
     px = 0; pz = 0; row = 0; dead = false; hopT = 1; riding = null;
     best = ctx.best("hop");
-    ctx.say(`0 · best ${best}`, "arrows / swipe to hop");
+    ctx.say(`0, best ${best}`, "arrows / swipe to hop");
   };
   const laneAt = (z: number) => lanes.find((l) => l.z === z);
   const blocked = (x: number, z: number) => laneAt(z)?.items.some((it) => (it as any).solid && Math.abs(it.position.x - x) < 0.5);
@@ -63,7 +63,7 @@ function benchHop(ctx: Ctx): Game {
     riding = null;
     from.copy(player.position); to.set(nx, 0.35, -nz); px = nx; pz = nz; hopT = 0;
     ctx.sfx(520 + nz * 4, 0.05, "square");
-    if (pz > row) { row = pz; ctx.say(`${row} · best ${Math.max(best, row)}`); }
+    if (pz > row) { row = pz; ctx.say(`${row}, best ${Math.max(best, row)}`); }
     while (lanes[lanes.length - 1].z < pz + 18) lanes.push(makeLane(lanes[lanes.length - 1].z + 1));
     while (lanes[0].z < pz - 6) { root.remove(lanes[0].group); lanes.shift(); }
   };
@@ -74,7 +74,7 @@ function benchHop(ctx: Ctx): Game {
     for (let i = 0; i < 18; i++) { const m = box(0.18, 0.18, 0.18, C.accent); m.position.copy(player.position); root.add(m); parts.push({ m, v: new THREE.Vector3((Math.random() - 0.5) * 6, Math.random() * 6 + 2, (Math.random() - 0.5) * 6), life: 1.2 }); }
     player.visible = false;
     if (row > best) ctx.best("hop", row);
-    ctx.say(`${row} · best ${Math.max(best, row)}`, `${why}. press any key`);
+    ctx.say(`${row}, best ${Math.max(best, row)}`, `${why}. press any key`);
   };
   const step = (dt: number) => {
     for (const l of lanes) for (const it of l.items) {
@@ -138,7 +138,7 @@ function stacker(ctx: Ctx): Game {
     const base = box(3, 3, 3, C.woodDark); base.position.y = -1.75; root.add(base);
     tower.push(slab(3, 3, 0, 0, 0));
     next();
-    ctx.say(`0 · best ${ctx.best("stack")}`, "space / tap to drop");
+    ctx.say(`0, best ${ctx.best("stack")}`, "space / tap to drop");
   };
   const drop = () => {
     if (dead) { start(); return; }
@@ -152,7 +152,7 @@ function stacker(ctx: Ctx): Game {
       ctx.sfx(120, 0.4, "sawtooth");
       const score = tower.length - 1;
       if (score > ctx.best("stack")) ctx.best("stack", score);
-      ctx.say(`${score} · best ${ctx.best("stack")}`, "missed. press any key");
+      ctx.say(`${score}, best ${ctx.best("stack")}`, "missed. press any key");
       moving = null; return;
     }
     const perfect = Math.abs(delta) < 0.06;
@@ -178,7 +178,7 @@ function stacker(ctx: Ctx): Game {
       top2.mesh.geometry.dispose(); top2.mesh.geometry = new THREE.BoxGeometry(top2.w, H, top2.d);
     }
     speed += 0.05;
-    ctx.say(`${tower.length - 1} · best ${Math.max(ctx.best("stack"), tower.length - 1)}`, perfect ? (combo > 1 ? `perfect ×${combo}` : "perfect") : "");
+    ctx.say(`${tower.length - 1}, best ${Math.max(ctx.best("stack"), tower.length - 1)}`, perfect ? (combo > 1 ? `perfect ×${combo}` : "perfect") : "");
     next();
   };
   const step = (dt: number) => {

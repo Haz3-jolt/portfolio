@@ -11,7 +11,7 @@ export default function mount(root: HTMLElement, data: { platforms: number[][]; 
     let next = at + dir;
     if (next < 0 || next >= data.platforms.length) { dir = -dir; next = at + dir; }
     at = next;
-    ctx.say(`play mode · platform ${at + 1} of ${data.platforms.length}`);
+    ctx.say(`play mode, platform ${at + 1} of ${data.platforms.length}`);
     const [x, y] = data.platforms[at];
     if (ctx.still) { Object.assign(state, { x, y, lift: 0 }); draw(); return; }
     busy = true;

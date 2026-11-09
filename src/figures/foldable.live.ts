@@ -38,13 +38,13 @@ export default function mount(root: HTMLElement, data: Data, ctx: any) {
     tl?.pause();
     Object.assign(s, { phi: Math.PI, show: 0, split: 0.42 });
     draw();
-    if (ctx.still) { Object.assign(s, { phi: 0, show: 1 }); draw(); say("tablet · two resizable panes"); return; }
-    say("phone · folded");
+    if (ctx.still) { Object.assign(s, { phi: 0, show: 1 }); draw(); say("tablet, two resizable panes"); return; }
+    say("phone, folded");
     tl = createTimeline({ onUpdate: draw, onComplete: () => setTimeout(() => { if (visible) cycle(); }, 1600) })
       .add(s, { phi: 0, duration: 1500, ease: "inOut(3)", delay: 700, onBegin: () => say("unfolding") })
-      .add(s, { show: 1, duration: 360, onComplete: () => say("tablet · two resizable panes") })
-      .add(s, { split: 0.66, duration: 900, ease: "inOut(3)", delay: 500, onUpdate: () => say(`dragging the divider · ${Math.round(s.split * 100)} | ${100 - Math.round(s.split * 100)}`) })
-      .add(s, { split: 0.3, duration: 1100, ease: "inOut(3)", delay: 300, onUpdate: () => say(`dragging the divider · ${Math.round(s.split * 100)} | ${100 - Math.round(s.split * 100)}`) })
+      .add(s, { show: 1, duration: 360, onComplete: () => say("tablet, two resizable panes") })
+      .add(s, { split: 0.66, duration: 900, ease: "inOut(3)", delay: 500, onUpdate: () => say(`dragging the divider, ${Math.round(s.split * 100)} | ${100 - Math.round(s.split * 100)}`) })
+      .add(s, { split: 0.3, duration: 1100, ease: "inOut(3)", delay: 300, onUpdate: () => say(`dragging the divider, ${Math.round(s.split * 100)} | ${100 - Math.round(s.split * 100)}`) })
       .add(s, { split: 0.42, duration: 700, ease: "inOut(3)", delay: 300 })
       .add(s, { show: 0, duration: 260, delay: 1400 })
       .add(s, { phi: Math.PI, duration: 1200, ease: "inOut(3)", onBegin: () => say("folding") });

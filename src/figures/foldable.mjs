@@ -72,5 +72,5 @@ export function build() {
     label: "A foldable phone unfolding into a tablet on a workbench, its screen splitting into two resizable panes whose divider slides back and forth. Beside it, a Chromebook shows the same two-pane layout with a right-click menu open. This is the Tablet and Chromebook UI built for AnkiDroid during Google Summer of Code 2025.",
     body: [bench(P, 2025), laptop(P), foldable(P)],
   });
-  return { svg, hint: "Hover to unfold", readout: "phone · folded", data: { P, dev: DEV } };
+  return { svg, hint: "Hover to unfold", readout: "phone, folded", data: { P, dev: DEV } };
 }

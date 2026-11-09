@@ -1,6 +1,12 @@
 {
   "name": "hari-srinivasan-site",
+  "description": "Source for harisrinivasan.dev",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Haz3-jolt/harisrinivasan.dev"
+  },
   "type": "module",
   "scripts": {
     "data": "node scripts/fetch-github.mjs",

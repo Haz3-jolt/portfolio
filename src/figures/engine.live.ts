@@ -5,7 +5,7 @@ export default function mount(root: HTMLElement, data: { screens: string[] }, ct
   const commands = ["fix the flaky test in kernel", "add portable sessions", "run the suite again", "ship v0.4"];
   let c = 0, i = 0, visible = false, off = -1, offTimer: any = 0;
   const live = () => data.screens.length - (off >= 0 ? 1 : 0);
-  const sayState = () => ctx.say(off >= 0 ? `${data.screens[off]} closed · session keeps running on ${live()}` : `1 session · ${live()} windows in sync`);
+  const sayState = () => ctx.say(off >= 0 ? `${data.screens[off]} closed, session keeps running on ${live()}` : `1 session, ${live()} windows in sync`);
   const render = (text: string) => lines.forEach((l, n) => { l.textContent = "> " + text + (n === off ? "" : "▍"); l.parentElement!.classList.toggle("screen-off", n === off); });
   setInterval(() => {
     if (!visible) return;

@@ -14,7 +14,6 @@ const BAYER = [
   [63, 31, 55, 23, 61, 29, 53, 21],
 ].map((row) => row.map((v) => (v + 0.5) / 64));
 
-const GLYPHS = " .·:-=+*#";
 
 function hash(x: number, y: number, seed: number) {
   let h = x * 374761393 + y * 668265263 + seed * 2147483647;

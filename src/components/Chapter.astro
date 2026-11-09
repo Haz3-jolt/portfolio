@@ -16,7 +16,7 @@ const flip = index % 2 === 1;
       {c.title}
     </h2>
     {c.body.map((p) => <p class="body">{p}</p>)}
-    {c.facts && <p class="facts">{c.facts.join(" · ")}</p>}
+    {c.facts && <ul class="facts">{c.facts.map((x) => <li>{x}</li>)}</ul>}
     {c.links && (
       <ul class="links">
         {c.links.map((l) => (
@@ -52,7 +52,7 @@ const flip = index % 2 === 1;
   .logo { height: 40px; width: auto; border-radius: 9px; flex: none; }
   .body { color: var(--ink-2); }
   .body + .body { margin-top: var(--space-3); }
-  .facts { margin-top: var(--space-4); color: var(--ink); font-weight: 500; }
+  .facts { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-5); list-style: none; padding: 0; margin: var(--space-4) 0 0; color: var(--ink); font-weight: 500; }
   .links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); list-style: none; margin: var(--space-4) 0 0; padding: 0; }
   .links a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; }
 

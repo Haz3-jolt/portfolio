@@ -101,5 +101,5 @@ export function build() {
     label: "A Kinect-style depth sensor on a workbench watching a raised hand that waves hello. Dashed depth rays run from the sensor's lens to the fingertips, and the tracker's skeleton of finger joints moves with the hand.",
     body: [bench(P, 2021), sensor(P), elbowRest(P), `<g data-hand>${handSvg(P, 0)}</g>`],
   });
-  return { svg, hint: "", readout: "tracking · hand found · waving", data: { P } };
+  return { svg, hint: "", readout: "tracking, hand found, waving", data: { P } };
 }

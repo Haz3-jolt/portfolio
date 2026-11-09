@@ -13,7 +13,7 @@
 
   <div class="grid">
     <div class="note">
-      <p class="label">Current note · Basic</p>
+      <p class="label">Current note, Basic</p>
       <dl><dt>Front</dt><dd>The capital of France</dd><dt>Back</dt><dd>Paris</dd></dl>
     </div>
     <div class="map">
@@ -87,7 +87,7 @@
     let html = "";
     if (type === "reversed") {
       const f = into("Front").join(" "), b = into("Back").join(" ");
-      html = f && b ? `<div class="c"><small>Card 1 · Front → Back</small><div class="q">${esc(f)}</div><div class="a">${esc(b)}</div></div><div class="c"><small>Card 2 · Back → Front</small><div class="q">${esc(b)}</div><div class="a">${esc(f)}</div></div>` : "";
+      html = f && b ? `<div class="c"><small>Card 1: Front to Back</small><div class="q">${esc(f)}</div><div class="a">${esc(b)}</div></div><div class="c"><small>Card 2: Back to Front</small><div class="q">${esc(b)}</div><div class="a">${esc(f)}</div></div>` : "";
     } else if (type === "typein") {
       const f = into("Front").join(" "), b = into("Back").join(" ");
       html = f && b ? `<div class="c"><small>Type the answer</small><div class="q">${esc(f)}?</div><input data-typein placeholder="your answer" autocomplete="off" /><div class="verdict" data-verdict></div></div>` : "";
@@ -109,7 +109,7 @@
       </svg>${extra ? `<div class="a" style="font-size:.85em">${esc(extra)}</div>` : ""}</div>`;
     }
     cardsEl.innerHTML = html || `<p class="empty">Nothing mapped into the front of the card, so there's nothing to study.</p>`;
-    root.querySelector("[data-out-label]")!.textContent = `${t.name} · ${cardsEl.querySelectorAll(".c").length || 0} card${cardsEl.querySelectorAll(".c").length === 1 ? "" : "s"}`;
+    root.querySelector("[data-out-label]")!.textContent = `${t.name}, ${cardsEl.querySelectorAll(".c").length || 0} card${cardsEl.querySelectorAll(".c").length === 1 ? "" : "s"}`;
     cardsEl.querySelectorAll<HTMLElement>("[data-blank]").forEach((b) => b.addEventListener("click", () => { b.toggleAttribute("data-open"); b.textContent = b.hasAttribute("data-open") ? note.Back : "[...]"; }));
     cardsEl.querySelectorAll<SVGRectElement>("[data-mask]").forEach((m) => m.addEventListener("click", () => m.toggleAttribute("data-open")));
     const input = cardsEl.querySelector<HTMLInputElement>("[data-typein]");

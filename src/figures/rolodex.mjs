@@ -90,5 +90,5 @@ export function build() {
     label: "A rotary card index standing for DASA-Bot. A student types /cutoff with a college nickname on a small terminal, the drum spins to that college's card and lifts it out, and a counter shows more than a thousand students helped.",
     body: [bench(P, 2023), stand(P), `<g data-cards>${cardsSvg(P, TOP)}</g>`, nearSide(P), terminal(P)],
   });
-  return { svg, hint: "", readout: "/cutoff nitt · NIT Trichy", data: { P, colleges: COLLEGES, n: N, top: TOP } };
+  return { svg, hint: "", readout: "/cutoff nitt, NIT Trichy", data: { P, colleges: COLLEGES, n: N, top: TOP } };
 }

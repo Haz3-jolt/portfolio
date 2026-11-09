@@ -20,7 +20,7 @@ const own = (data.own as any[]).filter((r) => !SKIP.test(r.name) && (r.descripti
     {latest.map((p) => (
       <li>
         <a href={p.url} target="_blank" rel="noopener">{p.title}</a>
-        <span>{short(p.repo)} · {date(p.merged)}</span>
+        <span>{short(p.repo)}<i>{date(p.merged)}</i></span>
       </li>
     ))}
   </ol>
@@ -40,7 +40,8 @@ const own = (data.own as any[]).filter((r) => !SKIP.test(r.name) && (r.descripti
   li { display: flex; justify-content: space-between; gap: var(--space-4); padding: 0.35rem 0; font-size: var(--step--1); border-bottom: 1px solid color-mix(in srgb, var(--rule) 50%, transparent); }
   li a { text-decoration: none; color: var(--ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   li a:hover { color: var(--accent); }
-  li span { color: var(--ink-3); white-space: nowrap; }
+  li span { color: var(--ink-3); white-space: nowrap; display: flex; gap: var(--space-3); }
+  li span i { font-style: normal; }
   .all { margin-top: var(--space-3); font-size: var(--step--1); }
   .all a { color: var(--ink-2); }
   .repos { margin-top: var(--space-6); display: grid; gap: var(--space-3); font-size: var(--step--1); color: var(--ink-3); line-height: 1.7; }

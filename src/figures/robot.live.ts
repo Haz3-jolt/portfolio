@@ -53,7 +53,7 @@ export default function mount(root: HTMLElement, data: { P: any; total: number; 
     scene.innerHTML = before;
     scene.appendChild(bot);
     scene.insertAdjacentHTML("beforeend", after);
-    ctx.say(s.at >= data.total - 0.5 ? "parked between the end lines" : "wandering · avoiding the boundary and obstacles");
+    ctx.say(s.at >= data.total - 0.5 ? "parked between the end lines" : "wandering, avoiding the boundary and obstacles");
   };
   const go = (from = 0) => {
     run?.pause();
@@ -75,7 +75,7 @@ export default function mount(root: HTMLElement, data: { P: any; total: number; 
       run?.pause();
       const at = s.at;
       animate(s, { spin: s.spin + Math.PI * 2, hop: [{ to: 6, duration: 260, ease: "out(2)" }, { to: 0, duration: 340, ease: "in(2)" }], duration: 900, ease: "out(3)", onUpdate: draw, onComplete: () => { s.spin %= Math.PI * 2; setTimeout(() => go(at), 500); } });
-      ctx.say("bumped · spinning out");
+      ctx.say("bumped, spinning out");
     }
   });
   svg.addEventListener("pointermove", (e) => {

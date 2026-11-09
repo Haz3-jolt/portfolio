@@ -83,5 +83,5 @@ export function build() {
     label: "An engine block marked axld standing for Axl, a local-first agent harness. Three windows, a terminal, a browser and an editor, are cabled to it and show the same coding session, typing the same line in sync.",
     body: [bench(P, 2026), engine(P), wires(P), ...SCREENS.map((s, i) => screen(P, s, i)), axolotl(P)],
   });
-  return { svg, hint: "Hover a window to unplug it", readout: "1 session · 3 windows in sync", data: { screens: SCREENS.map((s) => s.name) } };
+  return { svg, hint: "Hover a window to unplug it", readout: "1 session, 3 windows in sync", data: { screens: SCREENS.map((s) => s.name) } };
 }

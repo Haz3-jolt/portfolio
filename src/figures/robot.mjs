@@ -139,5 +139,5 @@ export function build() {
     label: "A U-shaped robot track on a workbench, drawn from the original CS50 project: a 50 centimetre lane bounded by black lines, with obstacles in the lane and a parking box between two end lines. A small Arduino bot wanders down the lane, turning away from the boundary lines and around the obstacles, and parks in the box.",
     body: [bench(P, 2019), track(P), `<g data-scene>${START_OBSTACLES.map((ob, i) => obstacleSvg(P, ob, i)).join("")}<g data-bot style="cursor:pointer">${botSvg(P, p0.x, p0.y, p0.th)}</g></g>`],
   });
-  return { svg, hint: "", readout: "wandering · avoiding the boundary", data: { P, total: TOTAL, obstacles: START_OBSTACLES } };
+  return { svg, hint: "", readout: "wandering, avoiding the boundary", data: { P, total: TOTAL, obstacles: START_OBSTACLES } };
 }

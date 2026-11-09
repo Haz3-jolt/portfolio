@@ -28,7 +28,7 @@ const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric
         <a href="https://github.com/ankidroid/Anki-Android" target="_blank" rel="noopener">AnkiDroid</a>.
         It started with games when I was twelve. Here's the bench, one thing at a time.
       </p>
-      <p class="stats">{merged} merged PRs · {data.stats.reposContributed} repos contributed to · open source since {since}</p>
+      <ul class="stats"><li>{merged} merged PRs</li><li>{data.stats.reposContributed} repos contributed to</li><li>open source since {since}</li></ul>
       <Contact size="lg" />
     </section>
 
@@ -63,7 +63,7 @@ const built = new Date(data.fetched).toLocaleDateString("en-GB", { day: "numeric
   .lede { font-size: var(--step-1); color: var(--ink-2); max-width: 38rem; line-height: 1.5; }
   .lede a { color: var(--ink); }
   .lede a:hover { color: var(--accent); }
-  .stats { margin-top: var(--space-5); margin-bottom: var(--space-4); font-size: var(--step--1); color: var(--ink-3); }
+  .stats { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-5); list-style: none; padding: 0; margin: var(--space-5) 0 var(--space-4); font-size: var(--step--1); color: var(--ink-3); }
   .end { display: grid; gap: var(--space-4); padding-block: var(--space-8) var(--space-6); border-top: 1px solid var(--rule); }
   .end h2 { font-size: var(--step-3); margin-bottom: var(--space-2); }
   .end p { color: var(--ink-2); }

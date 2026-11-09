@@ -114,5 +114,5 @@ export function build() {
     label: "A beige desktop computer with a CRT monitor, keyboard, mouse and a stack of floppy disks on a workbench. The screen shows a game editor in play mode: a cube hops across the platforms of a small level.",
     body: [bench(P, 2017), computer(P), screen(P), desk(P)],
   });
-  return { svg, hint: "Hover the screen to jump", readout: "play mode · platform 1 of 5", data: { platforms: PLATFORMS, origin: [16, 5] } };
+  return { svg, hint: "Hover the screen to jump", readout: "play mode, platform 1 of 5", data: { platforms: PLATFORMS, origin: [16, 5] } };
 }

@@ -18,10 +18,10 @@ export default function mount(root: HTMLElement, data: { P: any; colleges: strin
     const card = which * 3;
     const cmd = (Math.random() < 0.5 ? "/cutoff " : "/analyze ") + nick;
     a.textContent = "";
-    // Bring card `card` to the front: turn so that turn + card·step ≡ top, always spinning forward.
+    // Bring card `card` to the front: turn so that turn + card * step equals top (mod 2π), always spinning forward.
     let target = data.top - card * step;
     while (target < s.turn + Math.PI) target += 2 * Math.PI;
-    const finish = () => { a.textContent = `→ ${name}`; users++; u.textContent = `${users.toLocaleString("en-US")} students helped`; ctx.say(`${cmd} · ${name}`); busy = false; };
+    const finish = () => { a.textContent = `→ ${name}`; users++; u.textContent = `${users.toLocaleString("en-US")} students helped`; ctx.say(`${cmd}, ${name}`); busy = false; };
     let typed = 0;
     const type = setInterval(() => { typed++; q.textContent = cmd.slice(0, typed); if (typed >= cmd.length) clearInterval(type); }, ctx.still ? 0 : 55);
     if (ctx.still) { s.turn = target; s.lift = card; s.out = 7; draw(); finish(); return; }
