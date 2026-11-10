@@ -57,7 +57,7 @@ export function llmsTxt(full: boolean) {
   lines.push("## Optional");
   lines.push("");
   lines.push(`- [Full text of the site](${SITE}/llms-full.txt): every chapter, in plain text`);
-  lines.push(`- [Source code](https://github.com/Haz3-jolt/harisrinivasan.dev): this site, MIT licensed`);
+  lines.push(`- [Source code](https://github.com/Haz3-jolt/portfolio): this site, MIT licensed`);
   lines.push("");
   return lines.join("\n");
 }

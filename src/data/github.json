@@ -3698,12 +3698,12 @@
  ],
  "own": [
   {
-   "name": "Haz3-jolt/harisrinivasan.dev",
+   "name": "Haz3-jolt/portfolio",
    "description": "Source for harisrinivasan.dev, my personal site",
    "language": "JavaScript",
    "stars": 0,
    "pushed": "2026-11-09",
-   "url": "https://github.com/Haz3-jolt/harisrinivasan.dev"
+   "url": "https://github.com/Haz3-jolt/portfolio"
   },
   {
    "name": "Haz3-jolt/dotfiles",
