@@ -26,7 +26,7 @@ export function llmsTxt(full: boolean) {
   lines.push("");
   lines.push(`Site: ${SITE}`);
   lines.push("GitHub: https://github.com/Haz3-jolt");
-  lines.push("LinkedIn: https://www.linkedin.com/in/hari-srinivasan-b0633a2b8/");
+  lines.push("LinkedIn: https://www.linkedin.com/in/hari-haz3");
   lines.push("Email: harisrini21@gmail.com");
   if (cal) lines.push(`GitHub contributions in the last year: ${cal.total.toLocaleString("en-US")}`);
   lines.push("");
