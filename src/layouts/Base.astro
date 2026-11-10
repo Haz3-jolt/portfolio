@@ -13,7 +13,11 @@ const person = {
   "@type": "Person",
   "@id": `${SITE}/#hari`,
   name: "Hari Srinivasan",
+  givenName: "Hari",
+  familyName: "Srinivasan",
+  alternateName: ["Haz3-jolt", "Hari S"],
   url: SITE,
+  mainEntityOfPage: `${SITE}/`,
   image: `${SITE}/og.png`,
   email: "mailto:harisrini21@gmail.com",
   jobTitle: "Software developer, open source maintainer",
@@ -25,6 +29,9 @@ const person = {
     { "@type": "Organization", name: "AnkiDroid", url: "https://github.com/ankidroid/Anki-Android" },
   ],
   award: "Google Summer of Code 2025 (AnkiDroid, Tablet & Chromebook UI)",
+  subjectOf: [
+    { "@type": "CreativeWork", name: "Google Summer of Code 2025: AnkiDroid tablet and Chromebook UI", url: "https://summerofcode.withgoogle.com/archive/2025/projects/pctRgn1E" },
+  ],
 };
 const jsonld = {
   "@context": "https://schema.org",
