@@ -47,6 +47,7 @@ Then open http://localhost:4321.
 | `npm run build` | Build the static site into `dist/` |
 | `npm run data` | Fetch my merged PRs and repos from GitHub into `src/data/github.json` |
 | `npm run deploy` | Build and deploy to Cloudflare |
+| `npm run og` | Rebuild the 1200x630 share image `public/og.png` (macOS only: uses QuickLook and sips) |
 
 `npm run data` reads a token from `GITHUB_TOKEN`, or from `gh auth token` if the GitHub CLI is
 logged in. It works without one, but GitHub rate limits anonymous requests heavily.
@@ -59,6 +60,14 @@ so the PR list stays current, and on demand from the Actions tab. It needs one r
 - `CLOUDFLARE_API_TOKEN`: a Cloudflare API token created from the "Edit Cloudflare Workers" template
 
 The Cloudflare config lives in `deploy/wrangler.jsonc`.
+
+## Search and answer engines
+
+- Meta description, canonical URL, Open Graph and Twitter cards, with a share image at `/og.png`
+- JSON-LD structured data (`Person`, `WebSite`, `ProfilePage`) in the page head
+- `/robots.txt` and `/sitemap.xml`
+- `/llms.txt` and `/llms-full.txt` ([llmstxt.org](https://llmstxt.org)), generated from the same story data as the page
+- After each deploy the workflow pings [IndexNow](https://www.indexnow.org) so Bing and others recrawl
 
 ## Project layout
 

@@ -5,6 +5,35 @@ import "../styles/global.css";
 import "../styles/iso.css";
 interface Props { title: string; description: string }
 const { title, description } = Astro.props;
+const SITE = "https://harisrinivasan.dev";
+const canonical = new URL(Astro.url.pathname, SITE).href;
+const image = `${SITE}/og.png`;
+// Structured data: who I am and what this site is, for search engines and answer engines.
+const person = {
+  "@type": "Person",
+  "@id": `${SITE}/#hari`,
+  name: "Hari Srinivasan",
+  url: SITE,
+  image: `${SITE}/og.png`,
+  email: "mailto:harisrini21@gmail.com",
+  jobTitle: "Software developer, open source maintainer",
+  description: "Multidisciplinary developer. Maintainer of Agentic Resource Registry, co-author of Axl, Google Summer of Code 2025 contributor to AnkiDroid.",
+  sameAs: ["https://github.com/Haz3-jolt", "https://www.linkedin.com/in/hari-srinivasan-b0633a2b8/"],
+  knowsAbout: ["Open source software", "Coding agents", "Model Context Protocol", "Android", "Kotlin", "Python", "TypeScript", "Developer tools", "Spaced repetition"],
+  memberOf: [
+    { "@type": "Organization", name: "Agentic Resource Registry", url: "https://github.com/AgenticResourceRegistry/AgenticResourceRegistry" },
+    { "@type": "Organization", name: "AnkiDroid", url: "https://github.com/ankidroid/Anki-Android" },
+  ],
+  award: "Google Summer of Code 2025 (AnkiDroid, Tablet & Chromebook UI)",
+};
+const jsonld = {
+  "@context": "https://schema.org",
+  "@graph": [
+    person,
+    { "@type": "WebSite", "@id": `${SITE}/#site`, url: SITE, name: "Hari Srinivasan", inLanguage: "en", author: { "@id": `${SITE}/#hari` } },
+    { "@type": "ProfilePage", "@id": `${canonical}#page`, url: canonical, name: title, description, mainEntity: { "@id": `${SITE}/#hari` }, isPartOf: { "@id": `${SITE}/#site` }, dateModified: new Date().toISOString() },
+  ],
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -13,10 +42,35 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="author" content="Hari Srinivasan" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Hari Srinivasan" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hari Srinivasan, multidisciplinary dev who just loves building" />
+    <meta property="profile:first_name" content="Hari" />
+    <meta property="profile:last_name" content="Srinivasan" />
+    <meta property="profile:username" content="Haz3-jolt" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
     <meta name="theme-color" content="#1c1b19" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+    <link rel="me" href="https://github.com/Haz3-jolt" />
+    <link rel="me" href="https://www.linkedin.com/in/hari-srinivasan-b0633a2b8/" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
     <script is:inline>
       (() => {
         let t = null;

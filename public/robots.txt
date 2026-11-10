@@ -1,0 +1,5 @@
+# harisrinivasan.dev: everything is public, for search engines and AI crawlers alike.
+User-agent: *
+Allow: /
+
+Sitemap: https://harisrinivasan.dev/sitemap.xml
