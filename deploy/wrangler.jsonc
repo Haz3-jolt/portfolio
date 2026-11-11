@@ -1,10 +1,28 @@
 {
-  // harisrinivasan.dev: a static site served by Cloudflare as a Worker with static assets only.
-  // No Worker script runs; static asset requests are free on the Workers free plan.
-  // Deploy with: npm run deploy
+  // harisrinivasan.dev: static assets on Cloudflare Workers, plus a tiny script for analytics.
+  // Static files are served without running the script (free and unlimited on the free plan);
+  // only POST /e runs worker.ts, which writes one event to the D1 database below.
+  // Deploy with: npm run deploy. Read the numbers with: npm run stats
   "name": "harisrinivasan",
+  "main": "worker.ts",
   "compatibility_date": "2026-11-01",
-  "assets": { "directory": "../dist", "not_found_handling": "404-page" },
+  "assets": {
+    "directory": "../dist",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/e"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "harisrinivasan-analytics",
+      "database_id": "8b15d0ed-ffa6-409d-a1fd-81ca08026bcf",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Cloudflare's built-in rate limiter: at most 120 events a minute from one IP.
+  "ratelimits": [{ "name": "LIMITER", "namespace_id": "1001", "simple": { "limit": 120, "period": 60 } }],
   "routes": [{ "pattern": "harisrinivasan.dev", "custom_domain": true }],
-  "workers_dev": false
+  "workers_dev": false,
+  "observability": { "enabled": false }
 }

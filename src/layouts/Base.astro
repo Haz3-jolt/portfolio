@@ -92,9 +92,11 @@ const jsonld = {
     <script>
       import { applyTexture } from "../lib/texture";
       import { startAsciiField } from "../lib/ascii-field";
+      import { startAnalytics } from "../lib/analytics";
       applyTexture();
       document.addEventListener("themechange", applyTexture);
       startAsciiField();
+      startAnalytics();
     </script>
   </body>
 </html>
