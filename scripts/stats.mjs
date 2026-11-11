@@ -9,13 +9,23 @@ const days = Math.max(1, Number(process.argv[2]) || 30);
 const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
 
 function q(sql) {
-  const out = execFileSync(
-    "npx",
-    ["-y", "wrangler@4", "d1", "execute", "harisrinivasan-analytics", "--remote", "--json", "--config", "deploy/wrangler.jsonc", "--command", sql],
-    { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, CLOUDFLARE_ACCOUNT_ID: "47fc6d1c73d6a04839cffc9e608354c4" } },
-  );
-  const parsed = JSON.parse(out.slice(out.indexOf("[")));
-  return parsed.map((r) => r.results);
+  let out;
+  try {
+    out = execFileSync(
+      "npx",
+      ["-y", "wrangler@4", "d1", "execute", "harisrinivasan-analytics", "--remote", "--json", "--config", "deploy/wrangler.jsonc", "--command", sql],
+      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, CLOUDFLARE_ACCOUNT_ID: "47fc6d1c73d6a04839cffc9e608354c4" } },
+    );
+  } catch (err) {
+    const text = `${err.stdout || ""}${err.stderr || ""}`;
+    if (/CLOUDFLARE_API_TOKEN|not logged in|Authentication error|login/i.test(text)) {
+      console.error("Wrangler isn't logged in to Cloudflare in this shell. Run this once, approve it in the browser, then try again:\n\n  npx wrangler login\n");
+    } else {
+      console.error(text.trim() || err.message);
+    }
+    process.exit(1);
+  }
+  return JSON.parse(out.slice(out.indexOf("["))).map((r) => r.results);
 }
 
 const W = `day >= '${since}'`;
