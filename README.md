@@ -47,6 +47,7 @@ Then open http://localhost:4321.
 | `npm run build` | Build the static site into `dist/` |
 | `npm run data` | Fetch my merged PRs and repos from GitHub into `src/data/github.json` |
 | `npm run deploy` | Build and deploy to Cloudflare |
+| `npm run stats` | Print the analytics report for the last 30 days (`npm run stats -- 7` for a week) |
 | `npm run og` | Rebuild the 1200x630 share image `public/og.png` (macOS only: uses QuickLook and sips) |
 
 `npm run data` reads a token from `GITHUB_TOKEN`, or from `gh auth token` if the GitHub CLI is
@@ -69,6 +70,18 @@ The Cloudflare config lives in `deploy/wrangler.jsonc`.
 - `/llms.txt` and `/llms-full.txt` ([llmstxt.org](https://llmstxt.org)), generated from the same story data as the page
 - After each deploy the workflow pings [IndexNow](https://www.indexnow.org) so Bing and others recrawl
 
+## Analytics
+
+First-party and private. The page sends small beacons to `/e` on this domain: views with the referrer
+and UTM tags, link and button clicks, which chapters were reached, which objects were played with, and
+visible time on the page. `deploy/worker.ts` checks each one (same origin only, size and type limits,
+Cloudflare's rate limiter, bots dropped) and writes it to a Cloudflare D1 database.
+
+- No cookies, and no IP addresses stored. Visitors are counted with a hash whose salt is replaced daily.
+- Off for anyone with Do Not Track or Global Privacy Control turned on.
+- No dashboard and no read endpoint. `npm run stats` reads the database through Wrangler with the
+  owner's Cloudflare login.
+
 ## Project layout
 
 ```
@@ -81,7 +94,7 @@ src/
   lib/                  ASCII fog, paper texture, arcade games, page runtime, isometric kit
 public/                 images and the DOOM build
 scripts/                GitHub data fetcher
-deploy/                 Cloudflare config
+deploy/                 Cloudflare config, the analytics Worker and its D1 migration
 ```
 
 ## License
